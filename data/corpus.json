@@ -1,0 +1,450 @@
+[
+  {
+    "id": "GOV-01",
+    "title": "Company Handbook and Policy Governance",
+    "file": "01-governance.md",
+    "owner": "Chief Operating Officer",
+    "effective": "13 October 2026",
+    "version": "1.0",
+    "hash": "e797ac8978bb05a9e494d5809e92e0b6f48aec937ffa0dd1015c06bc711dff2e",
+    "sections": [
+      {
+        "id": "GOV-01-1",
+        "heading": "1. Company profile and policy framework",
+        "text": "Purpose and scope\nNorthstar Cloud Services is a fictional, 45-person business that provides hosted workflow software and implementation services to business customers. It has one shared office and a distributed workforce. This corpus is synthetic training and demonstration material; the approvals, company, and procedures are illustrative, not evidence of an operating organization or legal compliance.\n\nPolicy baseline\nThese policies apply to employees, temporary workers, and contractors wherever relevant to their access or duties. All ten documents are version 1.0, effective 13 October 2026, with review due 13 October 2027. Their classification is Internal. Applicable law and signed contractual commitments take precedence; the COO resolves internal conflicts with qualified advice where necessary. Workers must report a conflict rather than silently disregard a requirement.\n\nOperating conventions\nA business day is Monday through Friday excluding company-observed holidays. Business hours are 09:00-17:00 East Africa Time. Deadlines in hours are elapsed hours unless explicitly described as business hours. Emergency response and security reporting operate at all times. Financial thresholds are in USD; Finance records the conversion rate for other currencies on the approval date.\n\nWhere work is recorded\nThe Service Desk holds access, procurement, support, and incident tickets with restricted queues where needed. The People Register holds employment records. The Policy Register holds controlled documents and exceptions. The Vendor Register holds suppliers and contracts. These are conceptual systems, not live links or accounts."
+      },
+      {
+        "id": "GOV-01-2",
+        "heading": "2. Decision rights and document control",
+        "text": "Accountability\nThe CEO approves company policies and spending above $5,000. The COO owns this framework, continuity, and cross-functional disputes. People Operations owns employment administration and conduct case handling. The IT Lead owns access, device security, and technical incident response. The Privacy Lead owns personal-data decisions. Finance owns payment controls. The Support Lead owns customer case operations. A designated board representative handles concerns involving the CEO.\n\nApproval rules\nAn approver cannot approve their own expense, access, exception, or conduct case. The next uninvolved leader acts instead; the board representative acts for the CEO. Delegation must be written, time-limited, recorded in the Policy Register, and limited to the delegator's authority. Delegation never permits self-approval or bypasses Finance's independent payment verification.\n\nDocument change procedure\nThe owner opens a change entry with the reason, affected documents, proposed wording, and operational impact. Relevant owners review cross-references and thresholds. The COO checks consistency and the CEO approves. The owner publishes the dated version, archives the superseded copy, and assigns training before any new control takes effect. Emergency interim instructions require CEO approval and an expiry within 30 days.\n\nWorker access\nPeople Operations gives each worker the applicable policies at onboarding and records acknowledgment within five business days. Acknowledgment confirms receipt, not waiver of any right. Owners keep an accessible current copy and explain changes to affected teams."
+      },
+      {
+        "id": "GOV-01-3",
+        "heading": "3. Exceptions, assurance, and corpus map",
+        "text": "Exception procedure\nBefore deviating, the requester records the policy clause, business reason, risks, compensating controls, owner, and proposed expiry in the Policy Register. The policy owner and COO must approve; the CEO handles requests involving the COO. Exceptions last no more than 90 days and require fresh review to renew. No exception can authorize unlawful conduct, retaliation, falsification, or a contractual breach. An imminent safety emergency is handled immediately and documented afterward.\n\nAssurance and corrective action\nOwners review open exceptions monthly and sample compliance quarterly. Each finding has evidence, an accountable person, a due date, and closure verification by someone other than the implementer. The COO reviews overdue high-risk findings each week. Policy violations receive proportionate review under ETH-02, with an opportunity to respond; discipline is not automatic.\n\nCorpus map\nGOV-01 defines common rules. ETH-02 covers conduct and reporting. PPL-03 covers joining, leave, changes, and departure. WRK-04 covers remote work and safety. SEC-05 covers accounts and technology. DAT-06 covers information handling and retention. FIN-07 covers procurement and expenses. SUP-08 covers customer support and releases. INC-09 covers incidents and communication. BCP-10 covers continuity and recovery.\n\nEvidence and retention\nThe Policy Register preserves approvals, version history, exceptions, and assurance findings for three years after supersession or closure under DAT-06. Every quarterly review records the sample, result, and follow-up. A reported weakness is treated as an improvement opportunity unless evidence warrants a conduct investigation."
+      }
+    ]
+  },
+  {
+    "id": "ETH-02",
+    "title": "Code of Conduct and Speak-Up Procedure",
+    "file": "02-conduct.md",
+    "owner": "People Operations Lead",
+    "effective": "13 October 2026",
+    "version": "1.0",
+    "hash": "9e3db4c7baf96d5a55533259669409e0f75909041efbc336d27892c1c1d13ca1",
+    "sections": [
+      {
+        "id": "ETH-02-1",
+        "heading": "1. Expected conduct and conflicts of interest",
+        "text": "Respectful work\nWorkers must treat colleagues, customers, applicants, and suppliers with dignity. Harassment, discrimination, threats, bullying, retaliation, and deliberate exclusion from work opportunities are prohibited. These expectations apply in meetings, chat, travel, customer locations, and company events. Managers must address observed concerns promptly and must not require an affected person to confront the subject before seeking help.\n\nHonest business practices\nKeep accurate time, expense, customer, and financial records. Never misrepresent product capabilities, conceal material service problems, or alter evidence. Company assets and confidential information may be used only for authorized work. Reasonable incidental personal use of devices is permitted under SEC-05 if it creates no security, cost, or performance issue.\n\nConflicts and gifts\nDisclose outside employment, family relationships, financial interests, or personal relationships that could influence a business decision before participating in it. People Operations records a mitigation plan, such as recusal or an independent reviewer. Cash and cash-equivalent gifts are prohibited. Other gifts or hospitality above $50 in aggregate from one source in a rolling 12 months require written COO approval before acceptance. No gift may influence a decision, regardless of value.\n\nSupplier example\nAn employee whose sibling owns a shortlisted supplier must disclose the relationship and leave the evaluation and approval process. FIN-07 still governs competition, diligence, and payment controls."
+      },
+      {
+        "id": "ETH-02-2",
+        "heading": "2. Reporting and case handling",
+        "text": "How to report\nReport a concern to People Operations, an uninvolved manager, or the COO. If the concern involves the CEO, contact the designated board representative using the internal directory. Anonymous reports are accepted through the restricted conduct intake form, although missing contact details can limit follow-up. If there is immediate danger, seek local emergency assistance and follow INC-09 before routine case intake.\n\nIntake procedure\nThe recipient forwards the concern to the restricted People Operations queue the same business day. The case owner acknowledges a reachable reporter within two business days, assesses immediate protection needs, and records the allegation, dates, available evidence, and any conflict of interest. Records must not go into a broadly visible Service Desk queue.\n\nInvestigation\nAn uninvolved investigator sets a proportionate scope, interviews relevant people separately, preserves original evidence, and allows the subject a fair opportunity to respond. Interim measures may include reporting-line changes or access restrictions; they are not findings of wrongdoing. People Operations targets completion within 20 business days and provides a progress update at least every ten business days if more time is needed.\n\nConfidentiality\nShare case information only with people who need it to assess, investigate, decide, or provide support. Do not promise absolute secrecy. Reporting does not prevent a person from seeking outside advice or contacting an appropriate authority."
+      },
+      {
+        "id": "ETH-02-3",
+        "heading": "3. Outcomes, review, and manager responsibilities",
+        "text": "Decision and communication\nThe uninvolved decision-maker evaluates the evidence and records findings, reasons, corrective measures, and follow-up dates. Possible outcomes include no substantiated finding, coaching, process changes, training, or discipline subject to applicable requirements. People Operations tells the reporter that review is complete and shares appropriate outcome information while protecting other people's records.\n\nReview request\nA reporter or subject may request review within ten business days of receiving the outcome, identifying new evidence, a procedural defect, or a material inconsistency. An uninvolved leader acknowledges within two business days and targets a written decision within ten business days. A CEO-related case goes to the board representative. This internal timetable does not restrict external rights or remedies.\n\nRetaliation prevention\nGood-faith reporting and participation are protected even when a concern is not substantiated. Managers must not reduce opportunities, threaten, isolate, or disadvantage someone for participating. People Operations checks for retaliation about 30 and 60 days after closure and records any new concern as a separate case.\n\nManager checklist and records\nListen without deciding the outcome, document facts rather than assumptions, preserve relevant material, and escalate promptly. Do not run an informal parallel investigation or ask witnesses to align accounts. Conduct case records are retained for three years after closure under DAT-06, unless a hold or approved schedule requires longer. Quarterly reporting uses aggregate trends and avoids identifying individuals unnecessarily."
+      }
+    ]
+  },
+  {
+    "id": "PPL-03",
+    "title": "Employee Lifecycle and Leave Procedures",
+    "file": "03-people-operations.md",
+    "owner": "People Operations Lead",
+    "effective": "13 October 2026",
+    "version": "1.0",
+    "hash": "512f905cd480a2af580b267c2ca225d2a3a0b84fa31bd3dba4b9436de5e51885",
+    "sections": [
+      {
+        "id": "PPL-03-1",
+        "heading": "1. Recruitment and onboarding",
+        "text": "Hiring controls\nThe hiring manager submits a role description, employment type, budget, location, and business justification. Finance confirms budget and the CEO approves headcount before recruitment. People Operations applies consistent selection criteria, documents decisions, and collects only information relevant to the role. Any screening must be appropriate and reviewed for local requirements; this policy does not prescribe background checks.\n\nBefore the start date\nPeople Operations records the signed agreement, start date, manager, work location, and required payroll details in the restricted People Register. The manager opens an onboarding ticket at least three business days before arrival, identifying approved applications, access roles, equipment, and a buddy. IT provisions individual accounts under SEC-05; the manager cannot request a shared login as a shortcut.\n\nFirst week\nOn day one, verify identity through the approved process, issue equipment, explain emergency routes and reporting channels, and test access with the worker. Within five business days, complete policy acknowledgment, security and privacy orientation, and role-specific instruction. No production access is granted until required security training and role approval are recorded.\n\nFirst month\nThe manager holds check-ins at the end of weeks one and four to confirm workload, support needs, and access suitability. Remove unnecessary permissions immediately through the Service Desk. People Operations closes onboarding only when required evidence is complete or a documented exception has been approved under GOV-01."
+      },
+      {
+        "id": "PPL-03-2",
+        "heading": "2. Working arrangements, leave, and role changes",
+        "text": "Hours and availability\nNormal full-time scheduling is 40 hours per week, with individual arrangements documented in the employment agreement. Teams record agreed availability and coverage in their shared calendar. Additional hours require manager approval in advance where practicable and must be recorded accurately. People Operations applies the governing agreement and applicable requirements to pay and time-off treatment.\n\nLeave procedure\nLeave entitlement comes from the worker's agreement and applicable local rules; this corpus does not establish a universal statutory entitlement. For foreseeable leave, submit dates and a handover plan at least ten business days ahead when possible. The manager responds within three business days after checking coverage. A refusal must give a work-related reason and suggest alternatives. Do not treat silence as approval.\n\nUnexpected absence\nNotify the manager as soon as practicable, preferably before the scheduled start, without placing oneself at risk. If the manager is unavailable, contact People Operations. Share only the information needed to arrange absence and support; medical details belong in the restricted People Register, not a team channel.\n\nRole and location changes\nBefore a transfer, the receiving manager requests a permission review and the former manager identifies access to remove. IT removes obsolete access by the effective date. Changes of country of work require advance People Operations and Finance review for employment, tax, and operational implications. WRK-04 governs the physical work environment."
+      },
+      {
+        "id": "PPL-03-3",
+        "heading": "3. Performance, departure, and records",
+        "text": "Performance conversations\nManagers agree clear responsibilities and review progress at least quarterly. Feedback should identify observable examples, support offered, and realistic next steps. Material concerns require a written improvement plan with review dates and an opportunity for the worker to respond. Requests for accommodation or sensitive support go to People Operations with access limited to those who need the information.\n\nPlanned departure\nPeople Operations records the final working date and exact access cutoff time, then opens a restricted departure ticket. The manager assigns handover owners, identifies customer commitments, and confirms company property. IT schedules account suspension for the approved cutoff; email forwarding or data transfer requires an identified business purpose and privacy review. Finance handles outstanding expenses and final payments according to applicable requirements.\n\nUrgent departure\nFor an involuntary or high-risk separation, People Operations and IT coordinate the exact notification and cutoff time in advance. Only authorized participants see the plan. IT revokes sessions, tokens, remote access, and group membership and confirms completion in the restricted ticket.\n\nClosure and retention\nThe manager verifies handover and equipment return; IT records any missing asset for follow-up. People Operations confirms completion rather than leaving indefinite open access. Employment records are retained for three years after departure under DAT-06, subject to approved local schedules and holds. Operational access evidence follows the shorter SEC-05/DAT-06 schedule."
+      }
+    ]
+  },
+  {
+    "id": "WRK-04",
+    "title": "Remote Work, Workplace Safety, and Travel",
+    "file": "04-workplace.md",
+    "owner": "Chief Operating Officer",
+    "effective": "13 October 2026",
+    "version": "1.0",
+    "hash": "ba4f82c2605b65fea9ec987c924e23885339c99a895eec076ce398f826aa91fa",
+    "sections": [
+      {
+        "id": "WRK-04-1",
+        "heading": "1. Remote work and shared office rules",
+        "text": "Approved arrangements\nWorkers may use the shared office or an approved remote workspace consistent with their role and agreement. The manager documents the arrangement, expected availability, customer coverage, and equipment needs. A change of country requires PPL-03 review before work begins there. Remote work does not remove security, confidentiality, or attendance obligations.\n\nWorkspace controls\nUse a company-managed device, lock the screen when away, and keep confidential discussions out of public hearing. Avoid shared household computers and unattended printing. Use an approved secure connection under SEC-05; do not connect company storage devices to untrusted equipment. Store paper records in a locked place and return them for approved destruction when no longer needed.\n\nOffice access and visitors\nWorkers use their assigned access credential and must not lend it or allow unknown people to follow them inside. Hosts register visitors, explain safety arrangements, escort them in nonpublic areas, and ensure departure is recorded. Visitors must not view customer records or use an employee's device. Report a lost credential immediately to IT and the office coordinator.\n\nEquipment and costs\nThe manager approves necessary equipment through FIN-07. The asset register records custodian, serial number, issue date, and return status. Workers report faults and damage promptly; they must not arrange unauthorized repairs or dispose of equipment themselves."
+      },
+      {
+        "id": "WRK-04-2",
+        "heading": "2. Safety and emergency response",
+        "text": "Routine prevention\nKeep exits and walkways clear, use electrical equipment as intended, and report damaged cables, unstable furniture, leaks, or other hazards. Remote workers should arrange a stable chair, suitable screen height, adequate lighting, and regular movement breaks. The office coordinator maintains first-aid information and checks emergency instructions quarterly.\n\nImmediate danger\nStop the unsafe activity. Move to safety without attempting a rescue that creates further danger. Contact local emergency services when needed and follow the building's evacuation instructions. Do not delay emergency action to open a ticket or obtain manager approval. Once safe, notify the manager or office coordinator so they can account for affected people.\n\nReporting procedure\nReport a work-related injury, near miss, or significant hazard as soon as safe, normally the same day. Record what happened, location, time, affected activity, and immediate action; avoid speculation about blame. Sensitive medical information goes to People Operations. The office coordinator assigns corrective action and checks completion before reopening an unsafe area.\n\nEscalation and learning\nSerious injury, threats, evacuation, or loss of a worksite triggers INC-09 and may activate BCP-10. The COO reviews significant events within five business days after stabilization and shares practical lessons without unnecessary personal details. A worker may raise unresolved safety concerns through ETH-02 without retaliation."
+      },
+      {
+        "id": "WRK-04-3",
+        "heading": "3. Business travel and practical scenarios",
+        "text": "Trip approval\nBefore booking, document the purpose, destination, dates, estimated total cost, customer commitments, and any specific safety or accessibility needs. Obtain manager approval and the spending approvals in FIN-07. Finance reviews advance payments. International travel requires People Operations review of work authorization and the COO's review of material destination or itinerary concerns.\n\nDuring travel\nCarry only the information and equipment needed for the trip. Keep devices with you where practicable, avoid discussing Restricted information in public, and use approved connectivity. Report a lost device immediately under SEC-05 and INC-09. Do not attempt to recover stolen equipment personally. If conditions become unsafe, move to safety and contact the manager when practicable.\n\nClaims and changes\nKeep itemized receipts and explain the business purpose of each claim. Submit expenses within 30 calendar days under FIN-07. A material itinerary or cost change needs renewed approval unless immediate action is necessary for safety; record the reason and seek review the next business day.\n\nExamples and evidence\nA noisy public cafe is unsuitable for a confidential customer call; reschedule or use a private room. A power outage that prevents one worker from connecting is a manager coverage issue; a sustained office-wide disruption may invoke BCP-10. Keep travel approvals with expense records and safety reports for three years after closure under DAT-06."
+      }
+    ]
+  },
+  {
+    "id": "SEC-05",
+    "title": "Information Security and Access Management",
+    "file": "05-information-security.md",
+    "owner": "IT Lead",
+    "effective": "13 October 2026",
+    "version": "1.0",
+    "hash": "ea2290c93120af80b41a086c61af78c25e615b93665d9c35ef041cc8795880dd",
+    "sections": [
+      {
+        "id": "SEC-05-1",
+        "heading": "1. Accounts, access, and devices",
+        "text": "Access principles\nUse individual accounts and the least access needed for the approved role. Shared interactive logins are prohibited. Service accounts must have a named owner, defined purpose, approved permissions, and managed secrets. Multifactor authentication is required for email, remote access, administrative tools, and customer-data systems. Privileged and everyday activity must use separate accounts.\n\nRequest and approval\nThe manager opens a Service Desk request identifying the person, application, role, reason, and end date where temporary. The system owner approves the role; IT implements it and records evidence. Production administration also needs IT Lead approval. No one approves their own permissions. Temporary access expires within 30 days unless a fresh approval is recorded.\n\nDevice baseline\nCompany data is handled on managed devices with encryption, screen locking within five minutes, automatic updates, endpoint protection, and remote lock or wipe capability. IT inventories devices and checks compliance before granting access. Personal devices may access only approved low-risk services after an explicit, documented IT review; they may not store Restricted data.\n\nCredential handling\nUse the approved password manager and unique credentials. Never send passwords or authentication codes through email or chat. Report unexpected authentication prompts, suspected phishing, or exposed secrets immediately. IT rotates affected credentials and assesses scope through INC-09 rather than merely deleting the message."
+      },
+      {
+        "id": "SEC-05-2",
+        "heading": "2. Secure use, changes, and vulnerability handling",
+        "text": "Approved tools and data\nInstall software through IT or the approved catalog. New services require FIN-07 review, including security and privacy checks. Do not place customer data, confidential source code, or personal information into public AI tools or unapproved file-sharing services. Approved AI use must follow the specific data permissions recorded for that service, and a person must check outputs before business use.\n\nTechnical maintenance\nIT prioritizes actively exploited or internet-exposed critical vulnerabilities for mitigation within 24 hours of confirmation. Other critical vulnerabilities are addressed within seven calendar days; high vulnerabilities within 30 days. If a deadline cannot be met, the IT Lead records compensating controls and seeks a GOV-01 exception before expiry. Active exploitation is handled as an incident, not just a maintenance ticket.\n\nChange procedure\nChanges to production require an owner, reason, risk assessment, test evidence, rollback plan, and independent approval. SUP-08 defines release communication. An emergency change may proceed with incident commander approval, but the implementer cannot be the sole approver. Record the change immediately and complete independent review within one business day.\n\nDevelopment practices\nKeep secrets out of source code, use peer review, scan dependencies, and test with synthetic or de-identified data wherever possible. Production data in a test environment requires the data owner's and Privacy Lead's written approval and equivalent access controls."
+      },
+      {
+        "id": "SEC-05-3",
+        "heading": "3. Reviews, departures, and security reporting",
+        "text": "Periodic assurance\nSystem owners review access quarterly, including privileged, temporary, service, and dormant accounts. The reviewer records each account's owner and business need; unnecessary access is removed within two business days, or immediately where risk is urgent. IT reviews privileged access monthly. A completed review requires removal evidence, not just a signed spreadsheet.\n\nDeparture procedure\nPPL-03 supplies the authorized cutoff time. IT suspends the identity account, revokes active sessions and tokens, removes application access, rotates shared secrets the person knew, and updates the asset register. Business files transfer only to approved custodians. Do not delete a departing worker's records until DAT-06 retention and hold checks are complete.\n\nReport and contain\nReport a lost device, suspicious login, malware alert, data exposure, or accidental external sharing immediately through the emergency Service Desk channel and notify the IT on-call contact. If that channel is unavailable, call the published internal on-call number. Disconnect a suspected compromised device from networks if safe, but do not wipe it, investigate independently, or delete evidence.\n\nRecords and metrics\nRetain access requests and reviews for one year after closure; retain security logs for 90 days unless attached to an incident or hold. Track overdue vulnerabilities, removal timeliness, device compliance, and repeat exceptions monthly. INC-09 governs incident evidence and DAT-06 governs disposal."
+      }
+    ]
+  },
+  {
+    "id": "DAT-06",
+    "title": "Privacy, Information Handling, and Records",
+    "file": "06-data-and-records.md",
+    "owner": "Privacy Lead",
+    "effective": "13 October 2026",
+    "version": "1.0",
+    "hash": "19f6fe753f3765e50544da431d2bfaf57dadb8958c7c84d1a3beeb46a51a9dff",
+    "sections": [
+      {
+        "id": "DAT-06-1",
+        "heading": "1. Classification and responsible collection",
+        "text": "Classification scheme\nPublic information is approved for external release. Internal information includes routine procedures and nonpublic operating notes. Confidential information includes contracts, nonpublic finances, and ordinary customer business data. Restricted information includes authentication secrets, sensitive personal information, and high-impact customer datasets. The information owner assigns the classification; mixed collections follow the highest applicable level.\n\nHandling rules\nPublic information may be shared freely after publication approval. Internal information stays within approved worker systems. Confidential information requires named recipients, approved encrypted storage and transfer, and a valid business purpose. Restricted information also requires explicit owner approval for external disclosure, tightly limited access, and an approved secure transfer method. Do not send secrets as ordinary attachments.\n\nCollection and use\nCollect only information needed for a stated, authorized purpose. The Privacy Lead reviews new personal-data uses before collection begins, including notices, appropriate grounds, recipient access, storage location, and deletion plans. Do not reuse customer information for marketing, analytics, or model training merely because it is technically accessible.\n\nAccountability\nEach business dataset has a named owner, a purpose, classification, storage location, and retention category in the records inventory. Owners correct misclassification promptly and consult the Privacy Lead when a use or sharing request is unclear. SEC-05 governs technical controls; FIN-07 governs new suppliers."
+      },
+      {
+        "id": "DAT-06-2",
+        "heading": "2. Individual requests, sharing, and suspected breaches",
+        "text": "Request intake\nForward requests to access, correct, delete, or restrict personal information to the Privacy Lead within one business day. Record receipt time, contact details, request scope, and the system involved in the restricted privacy queue. Do not promise completion or disclose records before identity and authority are verified using a proportionate method.\n\nAssessment and response\nThe Privacy Lead records the applicable legal or contractual deadline and assigns internal tasks within two business days. Owners locate relevant records and identify exclusions, holds, third-party information, and technical limitations. The Privacy Lead approves the response and records what was supplied, changed, withheld, or retained and why. Internal targets never extend an applicable external deadline.\n\nExternal sharing\nBefore a new disclosure, confirm purpose, recipient identity, minimum required fields, contract terms, security, and any location restrictions. The Privacy Lead reviews personal-data transfers and Finance retains approved vendor terms under FIN-07. For one-off approved sharing, the owner records recipient, date, content category, and transfer method.\n\nSuspected breach\nA misdirected email, exposed folder, lost record, or unauthorized lookup must be reported immediately under INC-09. Attempt safe containment, such as revoking a sharing link, while preserving evidence. The Privacy Lead determines notification obligations with qualified advice. Workers must not independently notify all customers or claim that a breach is harmless."
+      },
+      {
+        "id": "DAT-06-3",
+        "heading": "3. Retention schedule, holds, and disposal",
+        "text": "Default internal schedule\nPolicy versions, approvals, and exceptions: three years after supersession or closure. Conduct cases and safety reports: three years after closure. Employment records: three years after departure. Financial transactions, expenses, and supplier contracts: seven years after transaction or contract end, whichever applies. Customer account records: two years after account closure. Support tickets: two years after closure. Incident records: three years after closure. Continuity plans and exercise records: three years after supersession or exercise. Access requests and reviews: one year after closure. Security logs: 90 days from creation. Unsuccessful applicant records: six months after the hiring decision.\n\nCustomer content and backups\nCustomer-hosted content follows the signed contract's retention and deletion terms. If terms are absent, the Privacy Lead must resolve them before ingestion. Operational backups follow BCP-10's 35-day rolling window and are not a long-term archive. Deleted material may remain in protected backups until rotation; if restored, required deletions must be reapplied before normal use.\n\nOverrides and holds\nThese are illustrative company defaults, not statements of legal minimums. The Privacy Lead records approved jurisdictional or contractual overrides. A legal, dispute, or investigation hold suspends deletion of affected material until authorized release; record scope, custodian, and release decision.\n\nDisposal procedure\nOwners review eligible records monthly, check holds and overrides, and authorize deletion. IT or the records custodian performs secure deletion or approved physical destruction. The disposal log identifies category, date range, method, authorizer, and completion date without copying the deleted content."
+      }
+    ]
+  },
+  {
+    "id": "FIN-07",
+    "title": "Procurement, Expenses, and Payment Controls",
+    "file": "07-finance-and-procurement.md",
+    "owner": "Finance Lead",
+    "effective": "13 October 2026",
+    "version": "1.0",
+    "hash": "5e70dcb45eeb8d3c858b25e91a8dd8769396a2cd09ffd2516df0a679f3b92523",
+    "sections": [
+      {
+        "id": "FIN-07-1",
+        "heading": "1. Spending authority and purchasing",
+        "text": "Approval matrix\nAll commitments require advance approval based on total expected value, including taxes, setup, renewals committed by the contract, and related purchases. Up to $500 requires manager approval. Above $500 through $5,000 requires manager and Finance approval. Above $5,000 requires manager, Finance, and CEO approval. Self-approval is prohibited; GOV-01 defines substitute approvers. Budget availability is necessary but does not replace approval.\n\nPurchase request\nBefore ordering or signing, submit the purpose, supplier, total cost, budget code, alternatives considered, delivery needs, and data or system access implications. Do not split a purchase to fall below a threshold. Recurring contracts are assessed on the full committed term; month-to-month services use projected 12-month cost for approval.\n\nSupplier comparison\nPurchases above $5,000 require two comparable quotes or a documented sole-source justification approved by Finance and the CEO. Evaluate suitability, total cost, security, support, and exit terms rather than price alone. Disclose relationships under ETH-02 before participating in selection.\n\nCommitment and receipt\nOnly a recorded authorized signatory may sign a contract. Finance issues the purchase reference after approvals. The requester confirms goods or services were received and records discrepancies before payment. An invoice is not evidence that the purchase was authorized."
+      },
+      {
+        "id": "FIN-07-2",
+        "heading": "2. Supplier diligence and invoice payment",
+        "text": "Onboarding a supplier\nFinance records legal name, business contact, tax or billing details where needed, payment terms, and bank information in the restricted Vendor Register. The IT Lead reviews any software or system access. The Privacy Lead reviews personal-data processing and transfer arrangements. No customer data may be sent before required reviews and contractual protections are complete.\n\nRisk and review\nSuppliers supporting production, holding Restricted information, or providing essential recovery services are critical suppliers. The owner reviews them annually for service performance, security evidence, continuity, renewal dates, and exit options. Record an owner and a 60-day renewal reminder for each term contract. Supplier access follows SEC-05 and must end when the service ends.\n\nPayment verification\nFinance matches the approved purchase, receipt confirmation, and invoice, then checks amounts, duplicate invoice numbers, and payment terms. A separate authorized person releases the payment. A worker who changes bank details cannot be the sole verifier or payment releaser.\n\nBank changes and suspected fraud\nVerify new or changed payment details through a known contact using independently held contact information, not the number supplied in the change request. Record the verification date and verifier. Pause payment when details conflict or urgency seems suspicious. Suspected fraud goes to the Finance Lead and INC-09; preserve the original request and transaction evidence."
+      },
+      {
+        "id": "FIN-07-3",
+        "heading": "3. Expenses, exceptions, and reconciliation",
+        "text": "Reimbursable expenses\nReasonable, necessary business costs are reimbursable when approved and supported. Personal purchases, fines, entertainment unrelated to business, and duplicate claims are not reimbursable. Travel follows WRK-04. Obtain approval against the estimated total before incurring costs; the same FIN-07 thresholds apply to reimbursements.\n\nClaim procedure\nSubmit an expense claim within 30 calendar days with date, vendor, currency, itemized receipt, business purpose, budget code, and prior approval reference. Finance uses a documented conversion source and records the rate. The manager confirms business purpose; Finance checks policy, calculation, and duplication. Claims requiring higher approval must include it before payment. Finance targets payment within ten business days of a complete approved claim.\n\nMissing receipts and urgent costs\nFor a missing receipt, provide alternate evidence and a signed explanation; Finance decides whether the evidence is adequate and documents the decision. Emergency safety costs may be incurred before approval under WRK-04, then submitted for review the next business day where practicable. Other retrospective requests require a recorded GOV-01 exception and are not automatically reimbursed.\n\nMonth-end controls\nFinance reconciles bank and card activity monthly, investigates unmatched items, and has an independent reviewer sign off. Track overdue claims, missing approvals, duplicate payments, and supplier concentration. Retain approvals, verification evidence, invoices, claims, and reconciliation records under DAT-06's seven-year financial schedule."
+      }
+    ]
+  },
+  {
+    "id": "SUP-08",
+    "title": "Customer Support and Production Change Procedures",
+    "file": "08-customer-operations.md",
+    "owner": "Support Lead",
+    "effective": "13 October 2026",
+    "version": "1.0",
+    "hash": "89818d5e03d2cbb9c2bfb31662623f332765a080e736a464c12c122929d15287",
+    "sections": [
+      {
+        "id": "SUP-08-1",
+        "heading": "1. Intake, verification, and service priorities",
+        "text": "Support coverage\nRoutine support operates during GOV-01 business hours. Emergency production incidents are routed to IT on-call at all times. Signed customer commitments take precedence over the internal targets below; Support records any different contract targets on the customer account. Response means a human acknowledgment with an owner and next step, not resolution.\n\nCase intake\nRecord the customer, verified contact, affected service, symptoms, start time, business impact, safe reproduction steps, and related incident references. Verify authority before discussing account details or changing access. Never request passwords or unrestricted database exports. Restrict attachments containing personal or Confidential information under DAT-06.\n\nPriority targets\nP1 is widespread production unavailability or suspected severe data/security impact: acknowledge within 30 elapsed minutes and invoke INC-09 immediately. P2 is major degradation or a blocked customer with no workaround: acknowledge within four business hours. P3 is limited impact with a workaround: acknowledge within one business day. P4 is a question or enhancement: acknowledge within two business days. Reassess priority whenever impact changes.\n\nOwnership\nThe first assigned agent remains accountable until another owner explicitly accepts handover. Routing a ticket does not discharge responsibility. Support may lower priority only with a recorded impact assessment; a possible security issue must first be assessed by IT."
+      },
+      {
+        "id": "SUP-08-2",
+        "heading": "2. Diagnosis, escalation, and communication",
+        "text": "Safe diagnosis\nCheck the service status and known issues, reproduce in a safe environment, and use approved read-only diagnostics before requesting changes. Obtain customer permission and appropriate internal approval before accessing customer content. Record commands or actions that could affect data. Production modifications must follow SEC-05 and the change procedure on the next page.\n\nEscalation triggers\nEscalate immediately for suspected data exposure, safety concerns, widespread outage, or risk of irreversible loss. Escalate P2 cases to the Support Lead if no diagnostic path exists after four business hours. Involve the account owner when a contractual milestone or relationship is at risk. INC-09 assigns incident severity independently of the support ticket priority.\n\nCustomer updates\nFor P1 incidents, use the incident commander's approved updates at least hourly. For P2 cases, update at least every business day; for P3 and P4, agree the next update with the customer. State verified facts, impact, current action, workaround if safe, and the next update time. Avoid unsupported recovery promises or speculation about fault.\n\nResolution and closure\nRecord the cause when known, action taken, validation, and any follow-up work. Ask the customer to confirm restoration. If no response arrives, send a reminder after three business days and close after another two, except for unresolved security or privacy issues. Reopen linked recurring issues rather than erasing prior history."
+      },
+      {
+        "id": "SUP-08-3",
+        "heading": "3. Production releases and knowledge management",
+        "text": "Change preparation\nThe change owner records scope, systems, customer impact, test results, risk, maintenance window, rollback criteria, and responsible implementer. An independent authorized reviewer approves before deployment. High-impact changes need IT Lead and Support Lead approval. Notify affected customers at least two business days before planned disruption unless a signed agreement requires longer.\n\nDeployment and validation\nConfirm monitoring, backups where relevant, on-call coverage, and an executable rollback plan. The implementer records start time, release identifier, and actions. Validate core workflows, error rate, and customer impact against the approved plan. If rollback criteria are reached, stop and restore the prior state or invoke INC-09 if safe rollback is unavailable. Record results before closing the change.\n\nEmergency changes\nINC-09's incident commander may authorize urgent remediation with independent approval as required by SEC-05. Record why normal lead time could not be met. Complete retrospective review within one business day, including whether the emergency introduced further risk and whether customer communication needs correction.\n\nLearning and records\nTurn recurring solutions into reviewed knowledge articles that omit customer identifiers and secrets. Assign each article an owner and review it every six months. Retain support tickets for two years after closure. Retain production change evidence with operational incident records for three years after closure, using DAT-06's incident category. Track response timeliness, reopen rates, and failed changes monthly."
+      }
+    ]
+  },
+  {
+    "id": "INC-09",
+    "title": "Incident Response and Crisis Communication",
+    "file": "09-incident-response.md",
+    "owner": "IT Lead",
+    "effective": "13 October 2026",
+    "version": "1.0",
+    "hash": "e9d16035dbf79befe7004098c3dda67918cc050a447c85ac7a6c68b1c8217952",
+    "sections": [
+      {
+        "id": "INC-09-1",
+        "heading": "1. Reporting, severity, and command roles",
+        "text": "When to invoke\nAn incident is an event threatening service availability, confidentiality, integrity, worker safety, or material business operations. Anyone may report a suspected incident immediately without waiting for proof. Use the emergency Service Desk channel and IT on-call contact; if unavailable, use the internal emergency directory. Seek emergency services first for immediate physical danger.\n\nSeverity assessment\nSEV1 means widespread critical-service outage, credible ongoing compromise of Restricted information, serious safety impact, or material uncontrolled financial harm. SEV2 means significant but contained disruption or suspected compromise requiring coordinated response. SEV3 means limited impact manageable by a single team. IT triages immediately and targets a recorded assessment within 30 elapsed minutes of report. Unknown scope is a reason for caution, not automatic downgrading.\n\nCommand structure\nThe IT on-call responder initially commands technical incidents and may transfer command explicitly to the IT Lead. The COO commands nontechnical incidents. The commander appoints an operations lead, scribe, and communications lead; People Operations, Finance, and the Privacy Lead join according to impact. One person may cover multiple roles when capacity is limited, while preserving independent change approval.\n\nEscalation\nNotify the COO and relevant owners immediately for SEV1. The COO informs the CEO. The commander records severity, rationale, affected services, known facts, decisions, and next review time in a restricted incident record."
+      },
+      {
+        "id": "INC-09-2",
+        "heading": "2. Containment, evidence, and external communication",
+        "text": "First response\nProtect people first, then reduce ongoing harm. Identify affected identities, systems, records, suppliers, and customer groups. Prefer reversible containment such as disabling an account, isolating a device, or revoking a link. Record who authorized each action, when it occurred, and its effect. Emergency production changes follow SEC-05's independent approval rule.\n\nEvidence preservation\nPreserve relevant logs, messages, configuration, timestamps, and original files in restricted storage. Record the collector, source, collection time, transfer history, and any changes made during collection. Do not circulate raw evidence in broad chat rooms. The Privacy Lead or authorized adviser may impose a hold under DAT-06; ordinary retention must not delete held evidence.\n\nCommunication rules\nThe communications lead provides a verified internal update at least hourly for SEV1 and every four elapsed hours for SEV2 while active, even if the update is that investigation continues. Support distributes customer updates under SUP-08. The CEO approves public statements; the Privacy Lead coordinates legally or contractually required notices and records applicable deadlines. Approval workflows must not delay a mandatory notice beyond its deadline; escalate immediately to the CEO if timing is at risk.\n\nWorking with third parties\nUse known supplier contacts, record ticket references, and share only necessary evidence through approved channels. A supplier's assurance does not replace Northstar's impact assessment. Invoke BCP-10 if expected disruption exceeds recovery targets."
+      },
+      {
+        "id": "INC-09-3",
+        "heading": "3. Recovery, closure, and follow-up",
+        "text": "Recovery decision\nThe operations lead verifies that the immediate cause is contained, affected credentials or components are remediated, and restoration tests have passed. The relevant business owner confirms essential workflows. The commander authorizes phased restoration and specifies enhanced monitoring. For suspected data compromise, involve the Privacy Lead before declaring the impact assessment complete.\n\nClosure criteria\nService restoration and incident closure are different decisions. Close only when active harm is stopped, required notices are assigned and tracked, evidence is preserved, remaining risks have owners, and the affected business owner accepts the result. The commander records the timeline, impact, actions, unresolved questions, and linked tickets. Long-term work may remain open with explicit owners and due dates.\n\nPost-incident review\nFor SEV1 and SEV2, hold a review within five business days after stabilization. Examine detection, escalation, decisions, control gaps, customer impact, and what helped. Focus on system and process improvement rather than blame. Assign corrective actions with risk-based dates; the COO reviews overdue high-risk actions weekly. Handle any conduct allegation separately under ETH-02.\n\nEvidence and exercises\nRetain incident records for three years after closure under DAT-06, with holds overriding disposal. Report aggregate incident counts, time to detect and restore, and recurring causes quarterly. Exercise a security scenario and a continuity scenario at least annually, coordinating with BCP-10."
+      }
+    ]
+  },
+  {
+    "id": "BCP-10",
+    "title": "Business Continuity and Disaster Recovery",
+    "file": "10-business-continuity.md",
+    "owner": "Chief Operating Officer",
+    "effective": "13 October 2026",
+    "version": "1.0",
+    "hash": "9ee5ccea394d3ea288a22d6138fb8a9a6c490bd66f810ebc24df2da18ebf305c",
+    "sections": [
+      {
+        "id": "BCP-10-1",
+        "heading": "1. Critical services and recovery objectives",
+        "text": "Purpose and activation\nMaintain essential customer and workforce operations through loss of technology, a supplier, the office, or key staff. The COO activates continuity when disruption is expected to exceed a recovery objective, normal response capacity is inadequate, or the office becomes unsafe. INC-09 remains the command framework; continuity work supports the same commander rather than creating competing instructions.\n\nPlanning objectives\nProduction customer service has a four-hour recovery time objective and a one-hour recovery point objective. Identity and emergency communication have a four-hour recovery time objective and a 24-hour recovery point objective. Routine support records have an eight-hour recovery time objective and a 24-hour recovery point objective. Finance and People Operations records have a two-business-day recovery time objective and a 24-hour recovery point objective. These are internal planning targets; signed customer commitments may be stricter.\n\nMeaning and dependencies\nRecovery time runs from disruption to minimum usable service; recovery point is the maximum targeted age of recoverable data. Neither is a guarantee. IT maps dependencies, including identity, hosting, network, secrets, and suppliers, and ensures prerequisite services can recover early enough to meet dependent service targets.\n\nOwnership\nIT maintains technical runbooks, Finance maintains payment alternatives, People Operations maintains worker contact details, and Support maintains customer communication routes. Each critical role has a named deputy in the restricted continuity directory, reviewed quarterly and after staffing changes."
+      },
+      {
+        "id": "BCP-10-2",
+        "heading": "2. Backup and restoration procedure",
+        "text": "Backup design\nIT maintains encrypted backups separated from routine production administration and protected against unauthorized alteration. Production data is captured at least hourly; other critical records at least daily. Backups follow a 35-day rolling window. IT monitors job completion daily and treats failed backups that threaten recovery objectives as an incident. Access to backup administration is limited and reviewed monthly.\n\nRestore sequence\nThe technical lead selects a recovery point based on impact, integrity, and available evidence. Restore foundational identity, network, and secrets services as needed, then production dependencies, customer service, and supporting business records. For compromise, use a clean environment and a verified recovery point; do not restore known malicious configuration simply because it is recent.\n\nValidation and authorization\nVerify integrity, permissions, data age, and representative business transactions. Record any lost transaction window and plan reconciliation with the relevant owner. Reapply required deletions and access removals before opening normal use, as DAT-06 requires. The incident commander approves restoration after IT and the business owner report validation results.\n\nTesting\nPerform a sample restoration quarterly and a coordinated recovery exercise annually. Include production data, a nonproduction business system, dependency order, and an alternate communication method. Capture actual recovery time and data age against targets. A successful backup job alone does not prove that restoration works."
+      },
+      {
+        "id": "BCP-10-3",
+        "heading": "3. People continuity, fallback operations, and return",
+        "text": "Office or workforce disruption\nThe COO confirms worker safety and whether approved remote work is viable. Managers account for team availability and redistribute essential duties to trained deputies. People Operations shares only necessary availability information. Workers must not return to an unsafe site to retrieve equipment or records; use replacement equipment through FIN-07 where needed.\n\nCommunication fallback\nMaintain a restricted, current offline copy of emergency contacts and the provider status URLs. If company email or identity is unavailable, use the approved phone tree and alternate communication channel listed in the continuity directory. Verify participants before sharing sensitive details. Do not move customer datasets into personal accounts to keep work going.\n\nManual operations\nSupport keeps a minimal, access-controlled temporary case log with time, customer reference, impact, owner, and follow-up. Finance may queue payment requests but must preserve independent verification and approval. After systems return, reconcile temporary records, check duplicates, and securely delete temporary copies once the canonical records are verified.\n\nReturn to normal\nThe COO authorizes stand-down after the incident commander confirms stable service, business owners reconcile work, and staff know the normal channels. Within five business days, review recovery gaps alongside INC-09's post-incident review. Track corrective actions to verified closure. Retain plans and exercise records for three years under DAT-06 and update runbooks after material system or supplier changes."
+      }
+    ]
+  },
+  {
+    "id": "DOC-11",
+    "title": "Acceptable Use and Digital Communications",
+    "file": "11-acceptable-use-and-digital-communications.md",
+    "owner": "Not specified in document",
+    "effective": "Not specified",
+    "version": "Not specified",
+    "hash": "ab15f7dec198df85daf68e49443daef7a0be695f78c3b807fc3bdceb43b0e412",
+    "sections": [
+      {
+        "id": "DOC-11-1",
+        "heading": "1. Purpose",
+        "text": "This policy defines the acceptable use of company systems, devices, networks, and digital communication tools. It supports productivity, security, and lawful conduct while preventing misuse of company resources. The company provides technology to support business operations, and every employee is expected to use it responsibly and in accordance with applicable policy."
+      },
+      {
+        "id": "DOC-11-2",
+        "heading": "2. Scope",
+        "text": "This policy applies to employees, contractors, interns, temporary workers, and volunteers who use company-provided technology or company data in connection with their work. It also applies to communications sent from personal devices when those communications are used for company business or include company information.\n\nThe policy covers email, messaging platforms, file-sharing systems, video conferencing, cloud services, collaboration tools, social media, and any other digital channels used in conducting company business."
+      },
+      {
+        "id": "DOC-11-3",
+        "heading": "3. Business Use Only",
+        "text": "Company technology must be used for legitimate business purposes. Personal use may be permitted if it is minimal, non-disruptive, and does not interfere with work obligations, expose the company to risk, or violate policy. Employees should not use company resources for personal commercial activity, political campaigning, or illegal conduct.\n\nUse of company technology to access or distribute inappropriate content, hateful or discriminatory material, content that violates employment policies, or any online material that could damage the company’s reputation or operations is prohibited."
+      },
+      {
+        "id": "DOC-11-4",
+        "heading": "4. Security and System Integrity",
+        "text": "Employees must not disable, bypass, or circumvent security controls, network protections, or monitoring tools. Attempts to hack, exploit, or test system vulnerabilities without authorization are prohibited. Software installations, browser extensions, scripts, and plug-ins may only be used when approved and supported by IT.\n\nEmployees must use multi-factor authentication where required, protect credentials, keep devices patched, and report suspicious activity promptly. Loss, theft, or suspected compromise of a company device or account must be reported immediately through the IT help desk or designated security channel."
+      },
+      {
+        "id": "DOC-11-5",
+        "heading": "5. Data Handling and Sharing",
+        "text": "Digital communications must be appropriate to the sensitivity of the information being transmitted. Information classification requirements apply to electronic communications just as they apply to paper records. Employees must avoid sending confidential or restricted information to unapproved recipients or storing it in unsanctioned tools.\n\nSensitive information should be shared only through approved platforms, with access restricted to those who require it for business purposes. Employees should verify recipients before sending data and should not forward or re-share content without a valid business reason."
+      },
+      {
+        "id": "DOC-11-6",
+        "heading": "6. Email and Messaging Standards",
+        "text": "Email and chat systems are business tools and should be used in a professional and courteous manner. Employees must preserve the integrity of company communications, avoid slang or hostile tone, and ensure that messages are clear, factual, and properly attributed.\n\nAnnouncements, client communications, and decision records should be retained in approved systems when they might be needed for accountability, legal review, or operational continuity. Employees should avoid sending sensitive information via public or personal systems and should not use email to bypass formal recordkeeping controls."
+      },
+      {
+        "id": "DOC-11-7",
+        "heading": "7. Remote Work and Device Security",
+        "text": "Employees working remotely must connect through approved channels and take reasonable steps to protect company information. Use of public Wi-Fi is permitted only if the connection is secure and the device complies with company security requirements. Screens should lock when unattended, and company devices should remain encrypted and up to date.\n\nStaff must be vigilant against phishing and social engineering attempts. Unexpected requests for login information, payment actions, or sensitive data should be verified through an independent channel before action is taken."
+      },
+      {
+        "id": "DOC-11-8",
+        "heading": "8. Social Media and External Communications",
+        "text": "Employees may use social media for work-related purposes only when authorized and in accordance with company branding and communication standards. Personal or unofficial use of social media must not imply endorsement by the company and must not disclose confidential information.\n\nEmployees should avoid public commentary that could damage the company’s reputation, create legal exposure, or undermine internal trust. If a question or issue involves customer, regulatory, or reputational risk, it should be escalated to the appropriate communications or legal contact."
+      },
+      {
+        "id": "DOC-11-9",
+        "heading": "9. Monitoring and Privacy",
+        "text": "The company may monitor network usage, log activity, and review electronic communications as part of lawful business operations, security management, and compliance obligations. Monitoring is limited to the extent necessary to protect company systems, maintain productivity, and investigate potential misconduct or policy violations.\n\nEmployees should understand that email, messaging, and work-related digital content may be subject to legal hold, audit, or investigative review, and should preserve records accordingly. This does not authorize unfettered monitoring of personal accounts; the company will act in a manner consistent with law and policy."
+      },
+      {
+        "id": "DOC-11-10",
+        "heading": "10. Enforcement and Consequences",
+        "text": "Failure to comply with this policy may result in corrective action, restriction of system access, or termination of employment or contract depending on the severity of the issue. Where misuse creates a legal, security, financial, or reputational risk, the company may initiate formal investigation, notify regulators, or take further action as appropriate.\n\nThe company expects employees to report actual or suspected misuse, policy violations, or security risks promptly. A good-faith report will not be treated as misconduct."
+      },
+      {
+        "id": "DOC-11-11",
+        "heading": "11. Review and Administration",
+        "text": "This policy will be reviewed annually or sooner if technology, risk profiles, or legal obligations change. Questions should be directed to the IT Security team, HR, or Legal. The company may update this policy to address emerging threats, compliance changes, or operational realities."
+      }
+    ]
+  },
+  {
+    "id": "DOC-12",
+    "title": "Asset Management and Facility Operations",
+    "file": "12-asset-management-and-facility-operations.md",
+    "owner": "Not specified in document",
+    "effective": "Not specified",
+    "version": "Not specified",
+    "hash": "050ac42a3f322bd16feeeaac4f229ac35d82b73eaefc5f76cf26052155a26934",
+    "sections": [
+      {
+        "id": "DOC-12-1",
+        "heading": "1. Purpose",
+        "text": "This procedure establishes standards for managing company assets, protecting facilities, and ensuring that physical resources are used efficiently and securely. It covers office equipment, furniture, tools, vehicles, inventory, and other corporate property. The goal is to reduce loss, support accountability, and maintain operational continuity."
+      },
+      {
+        "id": "DOC-12-2",
+        "heading": "2. Asset Ownership and Responsibility",
+        "text": "All company assets must be assigned to an owner, department, or individual responsible for custody, maintenance, and appropriate use. Asset ownership must be clearly documented in approved inventory systems or departmental records. Managers are accountable for verifying that assigned assets are used for business purposes and are not lost, damaged, or retained unnecessarily.\n\nAssets include company-owned equipment, leased equipment, software subscriptions, intellectual property, and physical inventories where applicable. Employees must treat these resources as valuable business assets and must not use them for personal gain or unauthorized activities."
+      },
+      {
+        "id": "DOC-12-3",
+        "heading": "3. Acquisition, Tracking, and Tagging",
+        "text": "New assets must be acquired through approved purchasing and receiving processes. Equipment or inventory should be tagged or recorded in the asset register before being placed into service. Asset records should include asset type, location, custodian, acquisition date, value, serial number or identifier, and disposition status.\n\nAny transfer of custody must be documented. When equipment is moved between sites or departments, the relevant asset owner and the operations or facilities team should update the asset register promptly."
+      },
+      {
+        "id": "DOC-12-4",
+        "heading": "4. Maintenance and Inspection",
+        "text": "Assets must be maintained in safe working condition and used according to manufacturer guidance and safety procedures. Equipment that is damaged, outdated, unsafe, or no longer fit for purpose should be removed from service or repaired as appropriate.\n\nRoutine inspections should be performed for facilities, fire safety equipment, office furniture, vehicles, and other relevant resources. Defects that pose a risk to safety or operational continuity should be reported without delay and addressed in a timely manner."
+      },
+      {
+        "id": "DOC-12-5",
+        "heading": "5. Facility Access and Security",
+        "text": "Facility access is controlled to protect employees, visitors, and property. Staff must not share access cards, bypass alarms, or leave doors unlocked when access control requires otherwise. Visitors and contractors must follow site procedures, remain in authorized areas, and receive escort support when required.\n\nManagers must ensure that workspaces are secure, well organized, and maintained to reduce hazards. Doors, keys, windows, alarm systems, and emergency exit routes must remain in functional order."
+      },
+      {
+        "id": "DOC-12-6",
+        "heading": "6. Stock, Storage, and Inventory Controls",
+        "text": "Inventory and storage areas must be kept in an orderly condition and protected against loss, accidental damage, or unauthorized use. Reorder levels, stock counts, and storage conditions should be managed according to operational need and local safety requirements. Materials that may pose a fire, chemical, or contamination risk should be managed with the appropriate handling controls.\n\nPeriodic inventory checks should be performed to validate the actual stock against records. Variances must be investigated promptly, and corrective actions should be documented."
+      },
+      {
+        "id": "DOC-12-7",
+        "heading": "7. Use and Care Standards",
+        "text": "Employees are expected to use company assets responsibly and according to the purpose for which they were assigned. Reasonable wear and tear is expected, but deliberate misuse, negligence, theft, or negligent damage is prohibited. Employees are responsible for reporting damage, malfunction, or loss as soon as they become aware of it.\n\nUse of company vehicles, tools, or specialized equipment requires authorization, training, and compliance with safety policies. Restricted or hazardous equipment may only be used by trained individuals."
+      },
+      {
+        "id": "DOC-12-8",
+        "heading": "8. Disposal and Surplus Management",
+        "text": "When an asset reaches the end of useful life, is obsolete, is damaged beyond repair, or is no longer needed, it must be disposed of or redeployed through approved procedures. Disposal may require environmental, finance, or legal review depending on the asset type and value.\n\nSensitive information stored on devices or equipment must be securely wiped before disposal or reassignment. Physical records and media should be destroyed according to retention and confidentiality requirements."
+      },
+      {
+        "id": "DOC-12-9",
+        "heading": "9. Insurance, Incident Response, and Recovery",
+        "text": "Assets should be protected against risk through insurance, safeguarding procedures, and contingency planning where appropriate. Loss or damage of significant assets may require immediate reporting to facilities, finance, security, or insurance contacts.\n\nIn the event of a major facility or asset incident, the company may need to isolate affected areas, secure property, and initiate business continuity procedures. Accurate records of the incident and the recovery steps are required for operational learning and possible claims."
+      },
+      {
+        "id": "DOC-12-10",
+        "heading": "10. Training and Compliance",
+        "text": "Employees with asset handling, facilities, or inventory responsibilities must be trained on the relevant procedures, documentation standards, and safety requirements. Managers should reinforce asset stewardship principles and ensure that assigned custodians understand their obligations.\n\nFailure to protect or track company assets may result in corrective action, reimbursement obligations, or disciplinary action. The company may also recover costs associated with lost, misused, or damaged assets."
+      }
+    ]
+  },
+  {
+    "id": "DOC-13",
+    "title": "External Communications and Brand Standards",
+    "file": "13-external-communications-and-brand-standards.md",
+    "owner": "Not specified in document",
+    "effective": "Not specified",
+    "version": "Not specified",
+    "hash": "aeed5d92a59d58a88b32958b3e87172f4c59fce2413133691d80bcc41b33277f",
+    "sections": [
+      {
+        "id": "DOC-13-1",
+        "heading": "1. Purpose",
+        "text": "This policy sets expectations for how employees and teams communicate with customers, suppliers, regulators, media, community stakeholders, and the public. It protects the company’s reputation, ensures consistent messaging, and supports lawful, professional communication across all channels."
+      },
+      {
+        "id": "DOC-13-2",
+        "heading": "2. Communication Authority",
+        "text": "Only authorized persons may speak on behalf of the company in official external communications. Managers, designated spokespersons, and communications representatives must coordinate with Legal and Marketing or Communications where needed. This requirement is especially important in customer incidents, legal inquiries, media requests, regulatory interactions, and product or service commitments.\n\nEmployees who are not designated spokespeople should avoid making public statements that could be interpreted as official company positions. If asked to comment publicly, employees should redirect the question to the appropriate communications lead."
+      },
+      {
+        "id": "DOC-13-3",
+        "heading": "3. Brand and Message Consistency",
+        "text": "The company’s brand is built on trust, reliability, and clear professional communication. External messages should be accurate, aligned with approved materials, and consistent with company values. Content should be factual, respectful, and tailored to the audience while avoiding exaggeration, misleading statements, or inconsistent guarantees.\n\nApproved brand guidelines should be used for logos, slogans, templates, email signatures, presentation materials, product references, and collateral. Any mention of the company in external content should be reviewed when the content affects risk, customer commitments, or public perception."
+      },
+      {
+        "id": "DOC-13-4",
+        "heading": "4. Customer and Vendor Communication",
+        "text": "Employees communicating with customers, partners, or suppliers should use professional language, truthful descriptions, and agreed service levels. Communications must be consistent with contractual obligations, approved pricing, delivery windows, and work commitments. Employees should not make commitments that are not authorized or that may be inconsistent with internal process.\n\nWhen a customer complaint, performance concern, or service issue arises, the responsible manager should coordinate a consistent response and, where appropriate, escalate to sales, operations, customer success, or Legal. The company should not misrepresent the status of an issue or conceal known material risks."
+      },
+      {
+        "id": "DOC-13-5",
+        "heading": "5. Crisis, Media, and Regulatory Communications",
+        "text": "During a crisis, incident, or significant disruption, communications must be timely, coordinated, and factual. Leadership and communications teams will establish the message and the communication flow. Employees with relevant information should share facts promptly and avoid creating rumor or speculation.\n\nAll media inquiries, statements to regulators, law enforcement, or public authorities should be routed through the authorized communications or legal channels. Employees must not independently promise a response, settlement, or regulatory accommodation unless authorized to do so."
+      },
+      {
+        "id": "DOC-13-6",
+        "heading": "6. Social Media and Public Platforms",
+        "text": "Use of social media and public digital channels must align with this policy and with unacceptable conduct policies. Employees may not publish or repost information that is defamatory, discriminatory, confidential, or otherwise harmful. Personal social media activity may be subject to policy when it relates to the company, impacts the workplace, or reveals company information.\n\nMarketing and communications staff should use approved hashtags, campaign guidelines, and messaging tools. Employees acting in external-facing roles should not provide commentary that could be mistaken for official company policy or product positioning unless authorized."
+      },
+      {
+        "id": "DOC-13-7",
+        "heading": "7. Accessibility, Inclusion, and Respectful Language",
+        "text": "External communications should be accessible, inclusive, and respectful. The company should use clear language, avoid exclusionary or insensitive phrasing, and make reasonable efforts to accommodate accessibility needs where relevant. This includes documents, websites, customer-facing materials, and public statements.\n\nCommunications that involve individuals or communities should avoid stereotyping, bias, or assumptions. The company values clarity, professionalism, and fairness in all external engagement."
+      },
+      {
+        "id": "DOC-13-8",
+        "heading": "8. Records and Approval Requirements",
+        "text": "External communication materials should be retained in the company records repository when they are business-relevant or may support legal, audit, or operational review. Drafts, approvals, announcements, presentations, and customer communications should be maintained according to the records retention schedule.\n\nWhere a communication has legal, operational, or financial implications, it should be reviewed and approved in accordance with the document control and approval framework. The company should not rely on informal approval for formal statements, customer commitments, or public-facing announcements."
+      },
+      {
+        "id": "DOC-13-9",
+        "heading": "9. Reporting and Escalation",
+        "text": "Employees who are uncertain about the appropriate communication channel or who become aware of a misleading or unauthorized statement should escalate the matter to the communications lead, Legal, or a manager. Concern about public reputational risk, customer harm, or legal exposure should be reported immediately.\n\nThe company supports open reporting and prohibits retaliation against employees who raise concerns about external communication risks in good faith."
+      },
+      {
+        "id": "DOC-13-10",
+        "heading": "10. Review and Continuous Improvement",
+        "text": "This policy will be reviewed periodically to reflect customer needs, market conditions, communication practices, and legal or regulatory changes. The company will use lessons learned from customer interactions, incidents, and formal reviews to improve communication quality and brand consistency."
+      }
+    ]
+  }
+]
