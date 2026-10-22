@@ -1,0 +1,38 @@
+{
+  "questions": 20,
+  "answerable": 17,
+  "refusal_tests": 3,
+  "generated_answers": 0,
+  "external_api_calls": 0,
+  "answer_groundedness_pct": null,
+  "answer_citation_accuracy_pct": null,
+  "answer_exact_match_pct": null,
+  "answer_partial_match_pct": null,
+  "retrieved_text_fidelity_pct": 100.0,
+  "source_metadata_integrity_pct": 100.0,
+  "source_instances": 104,
+  "citation_numbering_valid": true,
+  "gold_section_recall_at_6_pct": 94.74,
+  "gold_section_hits": 18,
+  "gold_section_total": 19,
+  "full_evidence_match_pct": 88.24,
+  "partial_evidence_match_pct": 11.76,
+  "fully_covered_facts": 35,
+  "partial_facts": 2,
+  "missing_facts": 1,
+  "total_facts": 38,
+  "retrieval_latency": {
+    "mean_ms": 5.273,
+    "p50_ms": 5.017,
+    "p95_ms": 6.019,
+    "min_ms": 3.401,
+    "max_ms": 10.912
+  },
+  "local_pipeline_latency": {
+    "mean_ms": 5.283,
+    "p50_ms": 5.023,
+    "p95_ms": 6.027,
+    "min_ms": 3.408,
+    "max_ms": 10.919
+  }
+}

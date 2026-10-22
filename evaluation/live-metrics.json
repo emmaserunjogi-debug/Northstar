@@ -1,0 +1,59 @@
+{
+  "cases": 20,
+  "answerable_cases": 17,
+  "refusal_cases": 3,
+  "api_requests": 19,
+  "api_http_200": 19,
+  "generated_answers": 17,
+  "search_fallbacks": 2,
+  "groundedness_pct": 100.0,
+  "grounded_statement_groups": 74,
+  "statement_groups": 74,
+  "citation_accuracy_group_level_pct": 98.63,
+  "accurate_citation_groups": 72,
+  "citation_groups": 73,
+  "local_citation_coverage_pct": 98.65,
+  "exact_match_pct": 5.0,
+  "full_semantic_match_pct": 80.0,
+  "partial_semantic_match_pct": 10.0,
+  "failed_match_pct": 10.0,
+  "answerable_full_semantic_match_pct": 88.24,
+  "user_visible_refusal_accuracy_pct": 33.33,
+  "model_refusal_semantic_accuracy_pct": 100.0,
+  "model_refusal_cases": 2,
+  "length_limit_pass_pct": 100.0,
+  "retrieval_latency": {
+    "mean_ms": 12.11,
+    "p50_ms": 12.17,
+    "p95_ms": 15.89,
+    "min_ms": 8.58,
+    "max_ms": 20.1,
+    "n": 20
+  },
+  "local_pipeline_latency": {
+    "mean_ms": 3413.2,
+    "p50_ms": 3377.58,
+    "p95_ms": 5422.91,
+    "min_ms": 8.61,
+    "max_ms": 6138.7,
+    "n": 20
+  },
+  "api_generation_stage_latency": {
+    "mean_ms": 3580.09,
+    "p50_ms": 3387.61,
+    "p95_ms": 6124.45,
+    "min_ms": 1520.51,
+    "max_ms": 6124.45,
+    "n": 19
+  },
+  "usage": {
+    "input_tokens": 39019,
+    "output_tokens": 6075,
+    "total_tokens": 45094,
+    "cached_input_tokens": 22400,
+    "reasoning_output_tokens": 4277
+  },
+  "retrieval_modes": [
+    "keyword"
+  ]
+}

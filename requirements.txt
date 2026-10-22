@@ -232,3 +232,12 @@ PROMPT GUARDRAILS
 - Reject overlong answers in favor of source passages; do not truncate policy conditions.
 - Output token budgets: Grok 1024 (including reasoning), OpenAI 512.
 - Keep citation validation for substantive answers; exempt the exact refusal.
+
+EVALUATION REGRESSION FIXES
+- Normalize known refusal casing, whitespace and one final punctuation mark.
+- Reject extra refusal text and invalid citations.
+- Decompose explicit compound questions into at most three local BM25 searches.
+- Reserve branch evidence and up to two adjacent same-section paragraphs.
+- Preserve the six-source limit, document scope, canonical text and citations.
+- Require support for every cited clause, next step and timing qualification.
+- Reject uncited answer paragraphs; semantic citation support still needs review.

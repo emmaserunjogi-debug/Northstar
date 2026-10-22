@@ -1,0 +1,408 @@
+{
+  "reviewer": "Codex agent, qualitative review of local retrieved text; not an independent human or external judge",
+  "reviews": [
+    {
+      "id": "Q01",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "The policy owner and COO must approve; the CEO handles requests involving the COO.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "GOV-01-3-p1"
+          ]
+        },
+        {
+          "fact": "Exceptions last no more than 90 days and require fresh review to renew.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "GOV-01-3-p1"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q02",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "No; noncash gifts above $50 in aggregate from one source in a rolling 12 months require written COO approval before acceptance.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "ETH-02-1-p3"
+          ]
+        },
+        {
+          "fact": "Cash and cash-equivalent gifts are prohibited regardless of value; no gift may influence a decision.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "ETH-02-1-p3"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q03",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "Contact the designated board representative using the internal directory.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "ETH-02-2-p1"
+          ]
+        },
+        {
+          "fact": "The case owner acknowledges a reachable reporter within two business days.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "ETH-02-2-p2"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q04",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "Submit dates and a handover plan at least ten business days ahead when possible.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ]
+        },
+        {
+          "fact": "The manager responds within three business days after checking coverage.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ]
+        },
+        {
+          "fact": "Silence is not approval.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q05",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "No universal entitlement is established by this corpus.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ]
+        },
+        {
+          "fact": "Entitlement comes from the worker\u2019s agreement and applicable local rules.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q06",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "No; advance People Operations and Finance review is required before work starts in another country.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "PPL-03-2-p4",
+            "WRK-04-1-p1"
+          ]
+        },
+        {
+          "fact": "The manager documents the remote arrangement, availability, customer coverage, and equipment needs.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "WRK-04-1-p1"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q07",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "No; stop the unsafe activity and move to safety without creating further danger.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "WRK-04-2-p2"
+          ]
+        },
+        {
+          "fact": "Contact local emergency services when needed and follow building evacuation instructions; do not delay emergency action for approval or a ticket.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "WRK-04-2-p2"
+          ]
+        },
+        {
+          "fact": "Once safe, notify the manager or office coordinator.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "WRK-04-2-p2"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q08",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "Shared interactive logins are prohibited; use individual accounts.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "SEC-05-1-p1"
+          ]
+        },
+        {
+          "fact": "Temporary access expires within 30 days unless a fresh approval is recorded.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "SEC-05-1-p2"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q09",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "No; customer data, confidential source code, and personal information must not go into public AI tools or unapproved file-sharing services.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "SEC-05-2-p1"
+          ]
+        },
+        {
+          "fact": "Approved AI use must follow service-specific data permissions and a person must check outputs before business use.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "SEC-05-2-p1"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q10",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "Report immediately through the emergency Service Desk channel and notify IT on-call; call the internal on-call number if the channel is unavailable.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "SEC-05-3-p3"
+          ]
+        },
+        {
+          "fact": "Do not wipe the device, investigate independently, or delete evidence.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "SEC-05-3-p3"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q11",
+      "evidence_match": "partial",
+      "facts": [
+        {
+          "fact": "Security logs are normally retained for 90 days from creation.",
+          "coverage": "partial",
+          "supporting_chunk_ids": [
+            "SEC-05-3-p4"
+          ]
+        },
+        {
+          "fact": "A legal, dispute, or investigation hold suspends deletion of affected material until authorized release.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "DAT-06-3-p3"
+          ]
+        }
+      ],
+      "notes": "90 days is retrieved from SEC-05, but the gold reference explicitly says from creation; DAT-06-3-p1 was not retrieved. Strict fact coverage marks that fact partial."
+    },
+    {
+      "id": "Q12",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "Manager, Finance, and CEO approval are required in advance.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "FIN-07-1-p1"
+          ]
+        },
+        {
+          "fact": "Two comparable quotes or a documented sole-source justification approved by Finance and the CEO are required.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "FIN-07-1-p3"
+          ]
+        },
+        {
+          "fact": "Do not split purchases to avoid thresholds.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "FIN-07-1-p2"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q13",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "Submit within 30 calendar days.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "FIN-07-3-p2"
+          ]
+        },
+        {
+          "fact": "Provide alternate evidence and a signed explanation for a missing receipt; Finance decides adequacy and documents the decision.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "FIN-07-3-p3"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q14",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "Acknowledge within 30 elapsed minutes and invoke INC-09 immediately.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "SUP-08-1-p3"
+          ]
+        },
+        {
+          "fact": "Response means human acknowledgment with an owner and next step, not resolution.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "SUP-08-1-p1"
+          ]
+        },
+        {
+          "fact": "Signed customer commitments take precedence over internal targets.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "SUP-08-1-p1"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q15",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "The communications lead provides verified internal updates at least hourly for SEV1.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "INC-09-2-p3"
+          ]
+        },
+        {
+          "fact": "SEV2 updates are every four elapsed hours while active, even if investigation continues.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "INC-09-2-p3"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q16",
+      "evidence_match": "full",
+      "facts": [
+        {
+          "fact": "Production customer service RTO is four hours and RPO is one hour.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "BCP-10-1-p2"
+          ]
+        },
+        {
+          "fact": "These are internal planning targets, not guarantees; signed customer commitments may be stricter.",
+          "coverage": "full",
+          "supporting_chunk_ids": [
+            "BCP-10-1-p2",
+            "BCP-10-1-p3"
+          ]
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "Q17",
+      "evidence_match": "partial",
+      "facts": [
+        {
+          "fact": "Sensitive information must be securely wiped before disposal or reassignment through approved procedures.",
+          "coverage": "partial",
+          "supporting_chunk_ids": [
+            "DOC-12-8-p2"
+          ]
+        },
+        {
+          "fact": "Only authorized persons may speak officially for the company; unauthorized employees should redirect public questions to the communications lead.",
+          "coverage": "missing",
+          "supporting_chunk_ids": []
+        }
+      ],
+      "notes": "Wiping is retrieved, but approved disposal procedure and communications authority passages are absent. Requires retrieval across two policy topics."
+    },
+    {
+      "id": "Q18",
+      "evidence_match": "not_applicable",
+      "facts": [],
+      "notes": "Lexical overlap retrieves passages despite the expected refusal. Offline search-only mode does not exercise the LLM refusal prompt."
+    },
+    {
+      "id": "Q19",
+      "evidence_match": "not_applicable",
+      "facts": [],
+      "notes": ""
+    },
+    {
+      "id": "Q20",
+      "evidence_match": "not_applicable",
+      "facts": [],
+      "notes": "Lexical overlap retrieves passages despite the expected refusal. Offline search-only mode does not exercise the LLM refusal prompt."
+    }
+  ]
+}

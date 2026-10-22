@@ -1,0 +1,189 @@
+{
+  "startedAt": "2026-10-22T13:54:10.771Z",
+  "timezone": "Africa/Kampala",
+  "live": true,
+  "provider": "xai",
+  "model": "grok-4.7",
+  "commit": "fd228c4e2c8fe63435069368fd353f61d59d39ba",
+  "corpusSha256": "458fa4d2b037ec7c95d4756dc110d6cabdaaaa15fed52fd454b52259963f0073",
+  "method": "Sequential local application pipeline; actual retrieval and generation functions, not HTTP/UI latency. No retries or warmup. Offline mode explicitly disables external providers.",
+  "results": [
+    {
+      "id": "Q10",
+      "question": "What should I do immediately after losing a company laptop, and should I wipe it myself?",
+      "mode": "generated",
+      "answer": "Report a lost company laptop immediately through the emergency Service Desk channel and notify the IT on-call contact. If that channel is unavailable, call the published internal on-call number [3]. Report it under SEC-05 and INC-09 [2], and through the IT help desk or designated security channel [4].\n\nDo not wipe the laptop yourself, investigate independently, or delete evidence [3]. Do not try to recover stolen equipment personally [2].\n\nNext step: use those reporting channels immediately [2][3][4].",
+      "sources": [
+        {
+          "id": "SEC-05-1-p3",
+          "documentId": "SEC-05",
+          "title": "Information Security and Access Management",
+          "section": "1. Accounts, access, and devices",
+          "sectionId": "SEC-05-1",
+          "text": "Device baseline\nCompany data is handled on managed devices with encryption, screen locking within five minutes, automatic updates, endpoint protection, and remote lock or wipe capability. IT inventories devices and checks compliance before granting access. Personal devices may access only approved low-risk services after an explicit, documented IT review; they may not store Restricted data.",
+          "score": 9.918708149935874,
+          "coverage": 0.375,
+          "chunkId": "SEC-05-1-p3",
+          "citation": 1
+        },
+        {
+          "id": "WRK-04-3-p2",
+          "documentId": "WRK-04",
+          "title": "Remote Work, Workplace Safety, and Travel",
+          "section": "3. Business travel and practical scenarios",
+          "sectionId": "WRK-04-3",
+          "text": "During travel\nCarry only the information and equipment needed for the trip. Keep devices with you where practicable, avoid discussing Restricted information in public, and use approved connectivity. Report a lost device immediately under SEC-05 and INC-09. Do not attempt to recover stolen equipment personally. If conditions become unsafe, move to safety and contact the manager when practicable.",
+          "score": 8.266240432627601,
+          "coverage": 0.5,
+          "chunkId": "WRK-04-3-p2",
+          "citation": 2
+        },
+        {
+          "id": "SEC-05-3-p3",
+          "documentId": "SEC-05",
+          "title": "Information Security and Access Management",
+          "section": "3. Reviews, departures, and security reporting",
+          "sectionId": "SEC-05-3",
+          "text": "Report and contain\nReport a lost device, suspicious login, malware alert, data exposure, or accidental external sharing immediately through the emergency Service Desk channel and notify the IT on-call contact. If that channel is unavailable, call the published internal on-call number. Disconnect a suspected compromised device from networks if safe, but do not wipe it, investigate independently, or delete evidence.",
+          "score": 4.006550195065668,
+          "coverage": 0.5,
+          "chunkId": "SEC-05-3-p3",
+          "citation": 3
+        },
+        {
+          "id": "DOC-11-4-p2",
+          "documentId": "DOC-11",
+          "title": "Acceptable Use and Digital Communications",
+          "section": "4. Security and System Integrity",
+          "sectionId": "DOC-11-4",
+          "text": "Employees must use multi-factor authentication where required, protect credentials, keep devices patched, and report suspicious activity promptly. Loss, theft, or suspected compromise of a company device or account must be reported immediately through the IT help desk or designated security channel.",
+          "score": 5.749285736456839,
+          "coverage": 0.3333333333333333,
+          "chunkId": "DOC-11-4-p2",
+          "citation": 4
+        },
+        {
+          "id": "SEC-05-1-p4",
+          "documentId": "SEC-05",
+          "title": "Information Security and Access Management",
+          "section": "1. Accounts, access, and devices",
+          "sectionId": "SEC-05-1",
+          "text": "Credential handling\nUse the approved password manager and unique credentials. Never send passwords or authentication codes through email or chat. Report unexpected authentication prompts, suspected phishing, or exposed secrets immediately. IT rotates affected credentials and assesses scope through INC-09 rather than merely deleting the message.",
+          "chunkId": "SEC-05-1-p4",
+          "citation": 5
+        },
+        {
+          "id": "WRK-04-3-p1",
+          "documentId": "WRK-04",
+          "title": "Remote Work, Workplace Safety, and Travel",
+          "section": "3. Business travel and practical scenarios",
+          "sectionId": "WRK-04-3",
+          "text": "Trip approval\nBefore booking, document the purpose, destination, dates, estimated total cost, customer commitments, and any specific safety or accessibility needs. Obtain manager approval and the spending approvals in FIN-07. Finance reviews advance payments. International travel requires People Operations review of work authorization and the COO's review of material destination or itinerary concerns.",
+          "chunkId": "WRK-04-3-p1",
+          "citation": 6
+        }
+      ],
+      "provider": "xai",
+      "model": "grok-4.7",
+      "retrieval": {
+        "mode": "keyword",
+        "reason": "not_configured"
+      },
+      "retrievedSources": [
+        {
+          "id": "SEC-05-1-p3",
+          "documentId": "SEC-05",
+          "title": "Information Security and Access Management",
+          "section": "1. Accounts, access, and devices",
+          "sectionId": "SEC-05-1",
+          "text": "Device baseline\nCompany data is handled on managed devices with encryption, screen locking within five minutes, automatic updates, endpoint protection, and remote lock or wipe capability. IT inventories devices and checks compliance before granting access. Personal devices may access only approved low-risk services after an explicit, documented IT review; they may not store Restricted data.",
+          "score": 9.918708149935874,
+          "coverage": 0.375,
+          "chunkId": "SEC-05-1-p3",
+          "citation": 1
+        },
+        {
+          "id": "WRK-04-3-p2",
+          "documentId": "WRK-04",
+          "title": "Remote Work, Workplace Safety, and Travel",
+          "section": "3. Business travel and practical scenarios",
+          "sectionId": "WRK-04-3",
+          "text": "During travel\nCarry only the information and equipment needed for the trip. Keep devices with you where practicable, avoid discussing Restricted information in public, and use approved connectivity. Report a lost device immediately under SEC-05 and INC-09. Do not attempt to recover stolen equipment personally. If conditions become unsafe, move to safety and contact the manager when practicable.",
+          "score": 8.266240432627601,
+          "coverage": 0.5,
+          "chunkId": "WRK-04-3-p2",
+          "citation": 2
+        },
+        {
+          "id": "SEC-05-3-p3",
+          "documentId": "SEC-05",
+          "title": "Information Security and Access Management",
+          "section": "3. Reviews, departures, and security reporting",
+          "sectionId": "SEC-05-3",
+          "text": "Report and contain\nReport a lost device, suspicious login, malware alert, data exposure, or accidental external sharing immediately through the emergency Service Desk channel and notify the IT on-call contact. If that channel is unavailable, call the published internal on-call number. Disconnect a suspected compromised device from networks if safe, but do not wipe it, investigate independently, or delete evidence.",
+          "score": 4.006550195065668,
+          "coverage": 0.5,
+          "chunkId": "SEC-05-3-p3",
+          "citation": 3
+        },
+        {
+          "id": "DOC-11-4-p2",
+          "documentId": "DOC-11",
+          "title": "Acceptable Use and Digital Communications",
+          "section": "4. Security and System Integrity",
+          "sectionId": "DOC-11-4",
+          "text": "Employees must use multi-factor authentication where required, protect credentials, keep devices patched, and report suspicious activity promptly. Loss, theft, or suspected compromise of a company device or account must be reported immediately through the IT help desk or designated security channel.",
+          "score": 5.749285736456839,
+          "coverage": 0.3333333333333333,
+          "chunkId": "DOC-11-4-p2",
+          "citation": 4
+        },
+        {
+          "id": "SEC-05-1-p4",
+          "documentId": "SEC-05",
+          "title": "Information Security and Access Management",
+          "section": "1. Accounts, access, and devices",
+          "sectionId": "SEC-05-1",
+          "text": "Credential handling\nUse the approved password manager and unique credentials. Never send passwords or authentication codes through email or chat. Report unexpected authentication prompts, suspected phishing, or exposed secrets immediately. IT rotates affected credentials and assesses scope through INC-09 rather than merely deleting the message.",
+          "chunkId": "SEC-05-1-p4",
+          "citation": 5
+        },
+        {
+          "id": "WRK-04-3-p1",
+          "documentId": "WRK-04",
+          "title": "Remote Work, Workplace Safety, and Travel",
+          "section": "3. Business travel and practical scenarios",
+          "sectionId": "WRK-04-3",
+          "text": "Trip approval\nBefore booking, document the purpose, destination, dates, estimated total cost, customer commitments, and any specific safety or accessibility needs. Obtain manager approval and the spending approvals in FIN-07. Finance reviews advance payments. International travel requires People Operations review of work authorization and the COO's review of material destination or itinerary concerns.",
+          "chunkId": "WRK-04-3-p1",
+          "citation": 6
+        }
+      ],
+      "retrievalMs": 16.179542000000026,
+      "generationMs": 7011.111833,
+      "totalMs": 7027.293834,
+      "httpStatus": 200,
+      "providerStatus": "completed",
+      "usage": {
+        "input_tokens": 2205,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens": 653,
+        "output_tokens_details": {
+          "reasoning_tokens": 543
+        },
+        "total_tokens": 2858,
+        "num_sources_used": 0,
+        "num_server_side_tools_used": 0,
+        "cost_in_usd_ticks": 66000000,
+        "context_details": {
+          "input_tokens": 2205,
+          "output_tokens": 662
+        }
+      },
+      "rawAnswer": "Report a lost company laptop immediately through the emergency Service Desk channel and notify the IT on-call contact. If that channel is unavailable, call the published internal on-call number [3]. Report it under SEC-05 and INC-09 [2], and through the IT help desk or designated security channel [4].\n\nDo not wipe the laptop yourself, investigate independently, or delete evidence [3]. Do not try to recover stolen equipment personally [2].\n\nNext step: use those reporting channels immediately [2][3][4]."
+    }
+  ],
+  "completedAt": "2026-10-22T13:54:17.814Z"
+}

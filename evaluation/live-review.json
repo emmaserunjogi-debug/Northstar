@@ -1,0 +1,1359 @@
+{
+  "reviewer": "Codex agent qualitative review; no independent human or external LLM judge",
+  "results_sha256": "d79652ae76ce19b8671c1e4c4424128bbfcfeed84f7072307f78bef57b09011a",
+  "reviews": [
+    {
+      "id": "Q01",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "The policy owner and COO must approve an exception. The CEO handles requests involving the COO.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "GOV-01-3-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "GOV-01-3-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "An approver cannot approve their own exception; the next uninvolved leader acts instead, and the board representative acts for the CEO.",
+          "citations": [
+            2
+          ],
+          "cited_chunk_ids": [
+            "GOV-01-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "GOV-01-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "Exceptions last no more than 90 days and require fresh review to renew.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "GOV-01-3-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "GOV-01-3-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "No exception can authorize unlawful conduct, retaliation, falsification, or a contractual breach. An imminent safety emergency is handled immediately and documented afterward.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "GOV-01-3-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "GOV-01-3-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 5,
+          "text": "Before deviating, record the policy clause, business reason, risks, compensating controls, owner, and proposed expiry in the Policy Register.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "GOV-01-3-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "GOV-01-3-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "No. A $75 supplier gift is above the $50 threshold, so you cannot accept it without prior written COO approval. Other gifts or hospitality above $50 in aggregate from one source in a rolling 12 months require that approval before acceptance. No gift may influence a decision, regardless of value. Cash and cash-equivalent gifts are prohibited.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "ETH-02-1-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "ETH-02-1-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "Next step: obtain written COO approval before accepting the gift.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "ETH-02-1-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "ETH-02-1-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "A conduct complaint involving the CEO should be directed to the designated board representative, using the internal directory",
+          "citations": [
+            2,
+            6
+          ],
+          "cited_chunk_ids": [
+            "GOV-01-2-p1",
+            "ETH-02-2-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "GOV-01-2-p1",
+            "ETH-02-2-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "The case owner acknowledges a reachable reporter within two business days",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "ETH-02-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "ETH-02-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "For foreseeable leave, submit dates and a handover plan at least ten business days ahead when possible.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "Your manager should respond within three business days after checking coverage.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "Do not treat silence as approval.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "A refusal must give a work-related reason and suggest alternatives.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 5,
+          "text": "Leave entitlement comes from your agreement and applicable local rules; this corpus does not set a universal statutory entitlement.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 6,
+          "text": "Next step: submit the dates and handover plan within the stated timeframe when possible.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "No. The policy does not give every worker exactly 25 days of annual leave. Leave entitlement comes from the worker\u2019s agreement and applicable local rules, and this corpus does not establish a universal statutory entitlement",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "For foreseeable leave, submit dates and a handover plan at least ten business days ahead when possible. The manager responds within three business days after checking coverage. A refusal must give a work-related reason and suggest alternatives. Silence is not approval",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "PPL-03-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "No. You cannot start working from another country without review.\n\nA change of country requires PPL-03 review before work begins there",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "WRK-04-1-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "WRK-04-1-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "Changes of country of work require advance People Operations and Finance review for employment, tax, and operational implications",
+          "citations": [
+            4
+          ],
+          "cited_chunk_ids": [
+            "PPL-03-2-p4"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "PPL-03-2-p4"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "WRK-04 governs the physical work environment",
+          "citations": [
+            4
+          ],
+          "cited_chunk_ids": [
+            "PPL-03-2-p4"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "PPL-03-2-p4"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "An approved remote arrangement still requires the manager to document expected availability, customer coverage, and equipment needs",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "WRK-04-1-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "WRK-04-1-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 5,
+          "text": "Remote work does not remove security, confidentiality, or attendance obligations",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "WRK-04-1-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "WRK-04-1-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "No. Do not delay emergency action to open a ticket or obtain manager approval",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "WRK-04-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "WRK-04-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "Stop the unsafe activity, move to safety, contact local emergency services when needed, and follow the building\u2019s evacuation instructions",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "WRK-04-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "WRK-04-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "Do not attempt a rescue that creates further danger",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "WRK-04-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "WRK-04-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "Once safe, notify the manager or office coordinator so they can account for affected people",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "WRK-04-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "WRK-04-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 5,
+          "text": "Next step: after reaching safety, make that notification",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "WRK-04-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "WRK-04-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "Shared interactive logins are prohibited. Staff must use individual accounts and only the least access needed for the approved role.",
+          "citations": [
+            3
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-1-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-1-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "Temporary access expires within 30 days unless a fresh approval is recorded.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-1-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-1-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "The manager opens the Service Desk request; the system owner approves the role; IT implements it. No one approves their own permissions.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-1-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-1-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q09",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "No. Do not place customer data, confidential source code, or personal information into public AI tools or unapproved file-sharing services",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-2-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-2-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "Confidential information includes ordinary customer business data",
+          "citations": [
+            5
+          ],
+          "cited_chunk_ids": [
+            "DAT-06-1-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "DAT-06-1-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "Employees must not store confidential or restricted information in unsanctioned tools",
+          "citations": [
+            3
+          ],
+          "cited_chunk_ids": [
+            "DOC-11-5-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "DOC-11-5-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "Company confidential information may be used only for authorized work",
+          "citations": [
+            6
+          ],
+          "cited_chunk_ids": [
+            "ETH-02-1-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "ETH-02-1-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 5,
+          "text": "Approved AI use must follow the specific data permissions recorded for that service, and a person must check outputs before business use",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-2-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-2-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 6,
+          "text": "New services require FIN-07 review, including security and privacy checks",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-2-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-2-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 7,
+          "text": "Next step: use only an approved service with recorded permissions, or route a new service through FIN-07 review before any such data is entered",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-2-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-2-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q10",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "Report the lost laptop immediately. Use the emergency Service Desk channel and notify the IT on-call contact. If that channel is unavailable, call the published internal on-call number",
+          "citations": [
+            2
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-3-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-3-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "Also report it through the IT help desk or designated security channel",
+          "citations": [
+            4
+          ],
+          "cited_chunk_ids": [
+            "DOC-11-4-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "DOC-11-4-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "and follow SEC-05 and INC-09",
+          "citations": [
+            3
+          ],
+          "cited_chunk_ids": [
+            "WRK-04-3-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "WRK-04-3-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "Do not wipe the laptop yourself, investigate independently, or delete evidence",
+          "citations": [
+            2
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-3-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-3-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 5,
+          "text": "Do not try to recover stolen equipment personally",
+          "citations": [
+            3
+          ],
+          "cited_chunk_ids": [
+            "WRK-04-3-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "WRK-04-3-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 6,
+          "text": "If you still have a suspected compromised device and it is safe, disconnect it from networks",
+          "citations": [
+            2
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-3-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-3-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 7,
+          "text": "Secure wiping applies before disposal or reassignment, not as a self-help step after loss",
+          "citations": [
+            5
+          ],
+          "cited_chunk_ids": [
+            "DOC-12-8-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "DOC-12-8-p2",
+            "SEC-05-3-p3"
+          ],
+          "citation_group_accurate": false,
+          "note": "Citation [5] supports wiping before disposal/reassignment but not the prohibition on self-help wiping after loss. That prohibition is in retrieved source [2], which this span does not cite."
+        },
+        {
+          "index": 8,
+          "text": "Next: contact the emergency Service Desk and IT on-call now, and do not alter the device",
+          "citations": [],
+          "cited_chunk_ids": [],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-3-p3"
+          ],
+          "citation_group_accurate": null,
+          "note": "Uncited closing instruction repeats the reporting/no-alteration guidance. Included in groundedness; excluded from citation accuracy and counted as lacking a local citation."
+        }
+      ]
+    },
+    {
+      "id": "Q11",
+      "exact_match": false,
+      "semantic_match": "partial",
+      "note": "Correctly gives 90 days and hold override, but omits the reference qualification from creation. Partial under the frozen strict rubric.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "Security logs are normally retained for 90 days unless they are attached to an incident or hold",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "SEC-05-3-p4"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SEC-05-3-p4"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "If a legal, dispute, or investigation hold applies, deletion of the affected material is suspended until authorized release",
+          "citations": [
+            5
+          ],
+          "cited_chunk_ids": [
+            "DAT-06-3-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "DAT-06-3-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "Ordinary retention must not delete held evidence",
+          "citations": [
+            3
+          ],
+          "cited_chunk_ids": [
+            "INC-09-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "INC-09-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "The Privacy Lead or an authorized adviser may impose a hold under DAT-06",
+          "citations": [
+            3
+          ],
+          "cited_chunk_ids": [
+            "INC-09-2-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "INC-09-2-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 5,
+          "text": "The hold record must include scope, custodian, and the release decision",
+          "citations": [
+            5
+          ],
+          "cited_chunk_ids": [
+            "DAT-06-3-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "DAT-06-3-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q12",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "A $6,000 purchase is above $5,000, so it needs advance approval from the manager, Finance, and the CEO. Approval is based on total expected value, including taxes, setup, committed renewals, and related purchases. Budget availability does not replace approval, and self-approval is prohibited.",
+          "citations": [
+            3
+          ],
+          "cited_chunk_ids": [
+            "FIN-07-1-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "FIN-07-1-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "It also requires two comparable quotes, or a documented sole-source justification approved by Finance and the CEO. Evaluate suitability, total cost, security, support, and exit terms, not price alone. Disclose relationships under ETH-02 before participating in selection.",
+          "citations": [
+            2
+          ],
+          "cited_chunk_ids": [
+            "FIN-07-1-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "FIN-07-1-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "You may not split the purchase to fall below a threshold.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "FIN-07-1-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "FIN-07-1-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "Before ordering or signing, submit the purpose, supplier, total cost, budget code, alternatives considered, delivery needs, and data or system access implications.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "FIN-07-1-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "FIN-07-1-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 5,
+          "text": "Only a recorded authorized signatory may sign. Finance issues the purchase reference after approvals. Confirm receipt and record discrepancies before payment.",
+          "citations": [
+            4
+          ],
+          "cited_chunk_ids": [
+            "FIN-07-1-p4"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "FIN-07-1-p4"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q13",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "Submit an expense claim within 30 calendar days under FIN-07. Include the date, vendor, currency, itemized receipt, business purpose, budget code, and prior approval reference.",
+          "citations": [
+            1,
+            2
+          ],
+          "cited_chunk_ids": [
+            "FIN-07-3-p2",
+            "WRK-04-3-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "FIN-07-3-p2",
+            "WRK-04-3-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "If the receipt is missing, provide alternate evidence and a signed explanation. Finance decides whether that evidence is adequate and documents the decision.",
+          "citations": [
+            3
+          ],
+          "cited_chunk_ids": [
+            "FIN-07-3-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "FIN-07-3-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "Other retrospective requests need a recorded GOV-01 exception and are not automatically reimbursed. Emergency safety costs may be incurred before approval under WRK-04, then submitted for review the next business day where practicable.",
+          "citations": [
+            3
+          ],
+          "cited_chunk_ids": [
+            "FIN-07-3-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "FIN-07-3-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "Next step: assemble the required claim details, or the alternate evidence and signed explanation, and send them to Finance.",
+          "citations": [
+            1,
+            3
+          ],
+          "cited_chunk_ids": [
+            "FIN-07-3-p2",
+            "FIN-07-3-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "FIN-07-3-p2",
+            "FIN-07-3-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q14",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "P1 acknowledgment is within 30 elapsed minutes for widespread production unavailability or suspected severe data/security impact. Support must also invoke INC-09 immediately.",
+          "citations": [
+            5
+          ],
+          "cited_chunk_ids": [
+            "SUP-08-1-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SUP-08-1-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "That target is acknowledgment, not resolution. Response means a human acknowledgment with an owner and next step, not resolution.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "SUP-08-1-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SUP-08-1-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "Signed customer commitments take precedence over these internal targets, and Support records any different contract targets on the customer account.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "SUP-08-1-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SUP-08-1-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "Reassess priority when impact changes.",
+          "citations": [
+            5
+          ],
+          "cited_chunk_ids": [
+            "SUP-08-1-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SUP-08-1-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q15",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "Verified internal updates during active incidents come from the communications lead under INC-09",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "INC-09-2-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "INC-09-2-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "- SEV1: at least hourly while the incident is active",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "INC-09-2-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "INC-09-2-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "- SEV2: every four elapsed hours while active",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "INC-09-2-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "INC-09-2-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "- An update is still required even if it only states that investigation continues",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "INC-09-2-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "INC-09-2-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 5,
+          "text": "Customer update cadence in SUP-08 is separate and does not set this internal schedule",
+          "citations": [
+            2
+          ],
+          "cited_chunk_ids": [
+            "SUP-08-2-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SUP-08-2-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q16",
+      "exact_match": false,
+      "semantic_match": "full",
+      "note": "All required reference facts conveyed without a policy contradiction.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "Production customer service has a four-hour recovery time objective (RTO) and a one-hour recovery point objective (RPO).",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "BCP-10-1-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "BCP-10-1-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 2,
+          "text": "These are internal planning targets, not guarantees.",
+          "citations": [
+            1,
+            2
+          ],
+          "cited_chunk_ids": [
+            "BCP-10-1-p2",
+            "BCP-10-1-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "BCP-10-1-p2",
+            "BCP-10-1-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 3,
+          "text": "Recovery time runs from disruption to minimum usable service; recovery point is the maximum targeted age of recoverable data.",
+          "citations": [
+            2
+          ],
+          "cited_chunk_ids": [
+            "BCP-10-1-p3"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "BCP-10-1-p3"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 4,
+          "text": "Signed customer commitments may be stricter and take precedence over these internal targets.",
+          "citations": [
+            1,
+            4
+          ],
+          "cited_chunk_ids": [
+            "BCP-10-1-p2",
+            "SUP-08-1-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "BCP-10-1-p2",
+            "SUP-08-1-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        },
+        {
+          "index": 5,
+          "text": "Next step: Support records any different contract targets on the customer account.",
+          "citations": [
+            4
+          ],
+          "cited_chunk_ids": [
+            "SUP-08-1-p1"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "SUP-08-1-p1"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q17",
+      "exact_match": false,
+      "semantic_match": "partial",
+      "note": "Correctly states secure wiping, but omits approved disposal procedures and cannot answer communication authority because that policy was not retrieved. The limitation refers to supplied passages, not the full corpus; excluded from substantive policy-claim scoring.",
+      "statement_groups": [
+        {
+          "index": 1,
+          "text": "Sensitive information stored on a device must be securely wiped before disposal or reassignment.",
+          "citations": [
+            1
+          ],
+          "cited_chunk_ids": [
+            "DOC-12-8-p2"
+          ],
+          "grounded": true,
+          "supporting_chunk_ids": [
+            "DOC-12-8-p2"
+          ],
+          "citation_group_accurate": true,
+          "note": "Supported by the cited passages jointly, allowing ordinary paraphrase and direct procedural inference."
+        }
+      ]
+    },
+    {
+      "id": "Q18",
+      "exact_match": false,
+      "semantic_match": "failed",
+      "note": "Raw model refusal adds a final period. The app requires an exact string and turns it into a search fallback. Raw refusal is semantically correct, but the user-visible answer fails the expected refusal.",
+      "statement_groups": []
+    },
+    {
+      "id": "Q19",
+      "exact_match": true,
+      "semantic_match": "full",
+      "note": "No evidence; exact refusal returned locally without an API request.",
+      "statement_groups": []
+    },
+    {
+      "id": "Q20",
+      "exact_match": false,
+      "semantic_match": "failed",
+      "note": "Raw model refusal adds a final period. The app requires an exact string and turns it into a search fallback. Raw refusal is semantically correct, but the user-visible answer fails the expected refusal.",
+      "statement_groups": []
+    }
+  ]
+}
