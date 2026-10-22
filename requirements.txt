@@ -223,3 +223,12 @@ Development/build dependencies:
 
 Dependency overrides:
   miniflare -> sharp: 0.35.4
+
+PROMPT GUARDRAILS
+- Refuse unsupported or outside-corpus questions with exactly:
+  i can only answer about our policies
+- No retrieved evidence returns the same refusal without a model call.
+- Limit generated answers to 150 whitespace-separated words, citations included.
+- Reject overlong answers in favor of source passages; do not truncate policy conditions.
+- Output token budgets: Grok 1024 (including reasoning), OpenAI 512.
+- Keep citation validation for substantive answers; exempt the exact refusal.
