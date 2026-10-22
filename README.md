@@ -16,9 +16,11 @@ Open the local URL printed by the development server. The production site uses S
 
 ## Enable LLM generation
 
-Configure `OPENAI_API_KEY` as a **secret** in Sites runtime environment variables and deploy again. Optionally configure `OPENAI_MODEL` (default `gpt-4.1-mini`). Do not put keys in the browser, source, or hosting manifest. For local development, provide these through the shell environment or the runtime's ignored `.dev.vars` file.
+Answer generation defaults to xAI Grok (`LLM_PROVIDER="xai"`, `XAI_MODEL="grok-4.7"`). Create a separate xAI API key at https://console.x.ai and set `XAI_API_KEY` in the ignored `.dev.vars` file, then restart the local server. For hosting, configure the key as a **secret** in Sites runtime environment variables and redeploy. Do not put keys in the browser, source, or hosting manifest. An OpenAI key cannot authenticate with xAI.
 
-Without a key the app explicitly returns policy search results, not a fabricated AI answer. With a key, the server calls the OpenAI Responses API. API failures are shown as errors; retries are user initiated. No live-provider test is implied by the mocked tests.
+To select OpenAI generation explicitly, set `LLM_PROVIDER="openai"`, `OPENAI_API_KEY`, and optionally `OPENAI_MODEL` (default `gpt-4.1-mini`). The two providers never share credentials.
+
+Without a key the app explicitly returns policy search results, not a fabricated AI answer. With a key, the server calls the selected provider’s Responses API with `store=false` (120-second timeout for Grok; 45 seconds for OpenAI). API failures are shown as errors; retries are user initiated. No live-provider test is implied by the mocked tests.
 
 Reference: https://developers.openai.com/api/docs/guides/text
 
@@ -86,7 +88,7 @@ References:
 ## LangChain migration
 
 Embeddings, vector ingestion/search, keyword retrieval, and rank fusion now use
-LangChain.js. Answer generation remains a direct OpenAI Responses API call.
+LangChain.js. Answer generation uses the direct xAI Responses API by default; OpenAI remains an explicit option.
 There is no Python service and no LangSmith tracing configured by this app.
 
 The LangChain payload schema differs from the previous custom implementation.
@@ -116,7 +118,7 @@ flowchart LR
   D --> F[Reciprocal rank fusion]
   K --> F
   F --> G[Top 6 canonical source passages]
-  G --> L[OpenAI Responses API]
+  G --> L[xAI Grok Responses API]
   L --> U[Cited answer and source reader]
 ```
 
@@ -132,7 +134,7 @@ flowchart LR
 - `worker/index.ts` and `lib/runtime.ts`: request-scoped secrets kept out of client bundles.
 - `app/page.tsx`: question interface, policy scope, library content search, source reader, saved answers, local question history, empty/loading/error states, responsive layout, keyboard dialog handling.
 
-Questions are independent. The application does not send conversation history to the model; follow-up questions should include their subject. Each generation sends the current question and up to six source passages to OpenAI. Saved answers and the latest 40 questions are stored in browser localStorage, not shared across users or devices. The raw answer is rendered as text, not HTML. The provider has no tools and cannot execute workplace actions.
+Questions are independent. The application does not send conversation history to the model; follow-up questions should include their subject. Each generation sends the current question and up to six source passages to the selected generation provider. Saved answers and the latest 40 questions are stored in browser localStorage, not shared across users or devices. The raw answer is rendered as text, not HTML. The provider has no tools and cannot execute workplace actions.
 
 ## Update the corpus
 
@@ -165,3 +167,5 @@ Live corpus embedding still requires a configured OpenAI API key.
 This is an initial working implementation for a small, fixed corpus. Semantic retrieval improves paraphrase matching when configured; keyword-only fallback can still miss paraphrases. A citation check proves that the source number exists, not that each claim follows from it. The UI exposes original passages for verification. The model is instructed to surface conflicts rather than silently choose a policy.
 
 Before a larger employee rollout, evaluate actual generated answers on an approved question set, evaluate whether additional reranking is needed, add durable per-user history if required, and introduce application-level quotas/rate limits and operational monitoring. Sites controls access to the whole corpus; this app does not implement different document permissions for different roles. It does not support PDF uploads, OCR, runtime corpus edits, or enterprise document sync.
+
+The Grok migration is covered by mocked provider tests. Live Grok authentication and generation require a funded `XAI_API_KEY` and have not yet been verified. Embeddings remain OpenAI `text-embedding-3-small`; Grok generation can use BM25 passages when semantic indexing is unavailable.

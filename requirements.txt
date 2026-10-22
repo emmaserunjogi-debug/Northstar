@@ -42,17 +42,20 @@ The supplied Northstar Cloud Services corpus is synthetic demonstration data.
   not a pip manifest.
 
 4. LLM CONFIGURATION
-- Required for generated answers: OPENAI_API_KEY, stored as a server-side secret.
-- Optional: OPENAI_MODEL; the implementation defaults to gpt-4.1-mini.
-- The configured account must have access and available quota for that model.
-- The server calls the OpenAI Responses API with the question and retrieved
-  passages, a 45-second timeout, and store=false.
+- Default generation provider: xAI Grok, LLM_PROVIDER=xai.
+- Required for Grok answers: XAI_API_KEY, stored as a server-side secret.
+- Optional XAI_MODEL defaults to grok-4.7.
+- Obtain a separate xAI key from https://console.x.ai with model access and credits.
+- Send evidence to https://api.x.ai/v1/responses with store=false, low reasoning,
+  and a 120-second timeout. Validate citations before displaying generated text.
+- Explicit OpenAI option: LLM_PROVIDER=openai, OPENAI_API_KEY, and optional
+  OPENAI_MODEL (default gpt-4.1-mini), with a 45-second timeout.
+- Never use a provider's key with another provider's endpoint.
 - Configure hosted secrets in Sites runtime environment variables and redeploy.
-- Local runtime secrets can be configured in an ignored .dev.vars file.
+- Local secrets belong in ignored .dev.vars; restart after editing.
 - Do not put credentials in this file, source code, browser code, or Git.
-- The OpenAI Developers plugin is the intended credential-setup workflow in
-  this chat; it is not an npm dependency or a runtime requirement for visitors.
-- At the initial handoff, live generation was not configured or verified.
+- Without a generation key, display clearly labelled retrieved passages.
+- Live Grok generation requires an xAI key and is not verified by mocked tests.
 
 5. EMBEDDING AND VECTOR DATABASE REQUIREMENTS
 - Use LangChain.js OpenAIEmbeddings for embedding requests and batching.
@@ -61,7 +64,7 @@ The supplied Northstar Cloud Services corpus is synthetic demonstration data.
 - Use LangChain BM25Retriever for keyword scoring and EnsembleRetriever for
   reciprocal rank fusion; remove the previous custom scoring implementations.
 - Use BaseRetriever wrappers only for policy validation, scope, and fallback.
-- Keep answer generation on the existing direct OpenAI Responses API.
+- Use xAI Grok Responses API for generation by default; keep retrieval in LangChain.
 - Store content and nested metadata using the LangChain Qdrant schema.
 - Reindex into northstar_lc_ collections; preserve existing legacy collections.
 - Do not auto-create collections from the question-answering request path.
