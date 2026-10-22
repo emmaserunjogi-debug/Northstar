@@ -25,8 +25,8 @@ Reference: https://developers.openai.com/api/docs/guides/text
 ## Semantic retrieval: embeddings and Qdrant
 
 The application now combines OpenAI `text-embedding-3-small` embeddings (1,536
- dimensions) with a persistent Qdrant vector database and the existing BM25
- keyword index. Reciprocal rank fusion merges both rankings into up to six cited
+ dimensions) with a persistent Qdrant vector database and LangChain BM25Retriever. LangChain EnsembleRetriever merges both rankings
+ using reciprocal rank fusion into up to six cited
  passages. The UI explicitly labels keyword-only fallback.
 
 Local setup (Docker Desktop must be running):
@@ -52,15 +52,16 @@ SEMANTIC_SCORE_THRESHOLD="0.35"
 The pinned Qdrant container binds only to localhost and stores its database in a
 Docker named volume. `npm run vectors:stop` stops it without deleting data.
 Embedding the corpus incurs API usage; indexing submits policy passages to OpenAI.
-Qdrant stores vectors and source identifiers, while source text is resolved from
-this application's canonical corpus. Queries send the user's question to the
+LangChain stores vectors, document content, and nested source metadata in Qdrant.
+Retrieved IDs are resolved against the application's canonical corpus before
+being used as answer evidence; remote text cannot override local policy text. Queries send the user's question to the
 embedding API and its vector to Qdrant. Credentials remain server-side.
 
 `npm run index:vectors` loads `.dev.vars`; shell environment variables take
 precedence. It creates a collection named from a SHA-256 fingerprint of the
 corpus, model, and dimensions. A complete collection is reused without new
 embedding calls; a partial collection is re-upserted safely. Indexing creates a
-keyword payload index for document filtering. Serving checks vector dimensions
+`metadata.documentId` keyword payload index for document filtering. Serving checks vector dimensions
 and the expected point count before querying. Changes to corpus content produce
 a new collection; old collections are retained rather than deleted automatically.
 Run indexing again after ingestion changes and before deploying that corpus.
@@ -82,6 +83,25 @@ References:
 - https://api.qdrant.tech/api-reference/search/query-points/
 - https://qdrant.tech/documentation/manage-data/collections/
 
+## LangChain migration
+
+Embeddings, vector ingestion/search, keyword retrieval, and rank fusion now use
+LangChain.js. Answer generation remains a direct OpenAI Responses API call.
+There is no Python service and no LangSmith tracing configured by this app.
+
+The LangChain payload schema differs from the previous custom implementation.
+Run `npm run index:vectors` after setting OPENAI_API_KEY to build the new
+`northstar_lc_...` collection. Its fingerprint includes the `langchain-v1` schema,
+model, dimensions, and corpus. Legacy `northstar_...` collections are retained,
+not modified or deleted. Until the new collection is complete, the application
+reports keyword fallback. Existing bookmarks and citation source IDs remain valid.
+
+Packages are locked in package-lock.json. The BM25 adapter is in
+`@langchain/community`, which currently emits a package-deprecation warning;
+we import only its BM25 module. Track a maintained successor before a future
+major dependency upgrade. Framework compatibility is verified by the Worker
+build and local runtime checks, rather than assumed from Node-only documentation.
+
 ## Architecture
 
 ```mermaid
@@ -102,9 +122,9 @@ flowchart LR
 
 - `corpus/`: copies of the 13 supplied Markdown files. The companion PDF is not ingested, avoiding duplicate evidence.
 - `scripts/ingest.mjs`: deterministic conversion with source SHA-256, document title, metadata, stable section IDs, and exact paragraph text.
-- `lib/retrieval.mjs`: in-memory BM25 ranking over paragraphs, headings, and document titles, with stop-word normalization and common workplace synonyms. This supplies the keyword component and fallback for hybrid retrieval.
-- `lib/vector-store.mjs`: OpenAI embedding and Qdrant HTTP clients, corpus fingerprinting, index readiness, scoped vector search.
-- `lib/hybrid-retrieval.mjs`: reciprocal rank fusion and explicit service-failure fallback.
+- `lib/retrieval.mjs`: LangChain BM25Retriever with policy token normalization, synonyms, relevance gating, and document-scope checks. Custom BM25 scoring has been removed.
+- `lib/vector-store.mjs`: LangChain OpenAIEmbeddings and QdrantVectorStore; vector search runs through asRetriever().invoke(). Policy-specific subclasses validate dimensions, readiness, score cutoff, and canonical sources. Qdrant administration uses the adapter's official REST client.
+- `lib/hybrid-retrieval.mjs`: LangChain EnsembleRetriever with equal weights and c=60, invoked through a BaseRetriever pipeline with request-local fallback status. Custom rank-fusion scoring has been removed.
 - `scripts/index-vectors.mjs`: batched embedding and idempotent Qdrant upserts.
 - `compose.yaml`: local Qdrant service with persistent storage.
 - `lib/answer.mjs`: bounded evidence prompt, refusal instructions for insufficient evidence, timeout, upstream error handling, `store: false`, and citation-number validation.

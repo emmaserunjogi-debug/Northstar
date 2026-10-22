@@ -55,6 +55,16 @@ The supplied Northstar Cloud Services corpus is synthetic demonstration data.
 - At the initial handoff, live generation was not configured or verified.
 
 5. EMBEDDING AND VECTOR DATABASE REQUIREMENTS
+- Use LangChain.js OpenAIEmbeddings for embedding requests and batching.
+- Use LangChain QdrantVectorStore.addDocuments for ingestion and its
+  asRetriever().invoke() interface for semantic retrieval.
+- Use LangChain BM25Retriever for keyword scoring and EnsembleRetriever for
+  reciprocal rank fusion; remove the previous custom scoring implementations.
+- Use BaseRetriever wrappers only for policy validation, scope, and fallback.
+- Keep answer generation on the existing direct OpenAI Responses API.
+- Store content and nested metadata using the LangChain Qdrant schema.
+- Reindex into northstar_lc_ collections; preserve existing legacy collections.
+- Do not auto-create collections from the question-answering request path.
 - Model: OpenAI text-embedding-3-small, with 1,536-dimensional vectors.
 - Vector database: Qdrant, using cosine similarity over persistent vectors.
 - Local service: qdrant/qdrant:v1.18.0 via compose.yaml, localhost port 6333.
@@ -64,7 +74,7 @@ The supplied Northstar Cloud Services corpus is synthetic demonstration data.
 - Use the same embedding model and dimensions for ingestion and questions.
 - Version collections by corpus content, model, and dimensions.
 - Require a complete index with matching dimensions before serving vectors.
-- Upsert stable point IDs and create a documentId keyword payload index.
+- Upsert stable point IDs and create a metadata.documentId keyword payload index.
 - Filter by selected document and resolve returned IDs against canonical sources.
 - Do not trust remote payloads to supply or replace policy text.
 - Merge keyword and semantic ranks; deduplicate and renumber source citations.
@@ -157,6 +167,12 @@ resolved versions and transitive dependencies. Install with npm ci, not pip.
 Runtime dependencies:
   @base-ui/react: ^1.7.0
   @hookform/resolvers: ^5.7.1
+  @langchain/classic: ^1.0.54
+  @langchain/community: ^1.1.29
+  @langchain/core: ^1.2.20
+  @langchain/openai: ^1.6.3
+  @langchain/qdrant: ^1.0.3
+  @qdrant/js-client-rest: ^1.19.0
   @shadcn/react: ^0.3.0
   class-variance-authority: 0.7.1
   clsx: 2.1.1
