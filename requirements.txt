@@ -250,3 +250,21 @@ ARCHITECTURE REVISION
 - Include SHA-256 corpus revision, answer timestamp and policy source metadata.
 - Preserve saved evidence snapshots; warn on stale or unversioned saved answers.
 - Keep semantic entailment checking, re-ranking and per-document ACLs proposed.
+
+LOCAL START/STOP OPERATIONS
+- Full instructions: README.md, "Start and stop locally".
+- Work in /Users/emmanuelserunjogi/ProjAI/policy-assistant.
+- Install Node.js 22.13+ and npm; run npm ci for initial dependency setup.
+- Create .dev.vars from .dev.vars.example only if absent; preserve existing keys.
+- Run npm run ingest initially or after changing policies.
+- Start app: npm run dev; normally http://127.0.0.1:5173.
+- Stop app: Ctrl+C in its terminal. Restart after changing .dev.vars.
+- Optional local semantic service: start Docker engine, then npm run vectors:start.
+- Initial/updated semantic index: configure OpenAI key and Qdrant URL, then
+  npm run index:vectors (incurs embedding API usage).
+- Stop Qdrant: npm run vectors:stop; data remains in the named volume.
+- Do not delete volumes during normal shutdown. Stop the app and Qdrant separately.
+- Check Qdrant: docker compose ps. Check app: GET /api/status.
+- Built Worker preview: npm run build, then npm start; stop with Ctrl+C.
+- Python 3 is optional for report scripts, not required by the application.
+- These commands affect local processes, not the hosted private site.

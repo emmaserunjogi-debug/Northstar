@@ -2,17 +2,86 @@
 
 A private company-policy RAG application built with React, Vinext, and a Cloudflare Worker backend. The provided Northstar corpus is synthetic demonstration material.
 
-## Run
+## Start and stop locally
 
-Requires Node 22.13+ and npm.
+### Dependencies and first-time setup
+
+- Node.js 22.13 or later and npm (see `package.json`).
+- Docker Desktop, or Docker Engine with Compose, only for local Qdrant semantic retrieval.
+- A funded xAI API key for Grok answers. OpenAI credentials are separately required for embeddings. Neither provider runs as a local service.
+- Python 3 only for the optional evaluation report scripts; it is not required to serve the app. No `pip install -r requirements.txt` is needed: that file documents requirements.
 
 ```sh
+cd /Users/emmanuelserunjogi/ProjAI/policy-assistant
 npm ci
-node scripts/ingest.mjs
+# Create the local settings file only if it does not already exist.
+if [ ! -f .dev.vars ]; then cp .dev.vars.example .dev.vars; fi
+npm run ingest
+```
+
+Edit `.dev.vars` with your actual settings. Preserve existing keys; do not commit this file. For Grok, set `LLM_PROVIDER="xai"`, `XAI_MODEL="grok-4.7"`, and `XAI_API_KEY`. Restart the application after changing settings.
+
+### Start the application
+
+```sh
+cd /Users/emmanuelserunjogi/ProjAI/policy-assistant
 npm run dev
 ```
 
-Open the local URL printed by the development server. The production site uses Sites owner-private authentication. Do not expose the local development server to the public internet: it has no standalone authentication.
+Keep that terminal open. The development URL is normally **http://127.0.0.1:5173**; use the URL printed by the server. Keyword retrieval works without Docker or an embedding key. Without a generation key, the app shows source passages instead of generated answers.
+
+### Start optional Qdrant dependencies
+
+Start Docker Desktop and wait until its engine is ready. On macOS, you can launch it with `open -a Docker`. On other platforms, start your Docker engine using its normal service controls. Check readiness with `docker info`.
+
+```sh
+npm run vectors:start
+docker compose ps
+```
+
+Set `QDRANT_URL="http://127.0.0.1:6333"` and a funded `OPENAI_API_KEY` in `.dev.vars`. Before the first semantic search, or after updating policies, run:
+
+```sh
+npm run ingest
+npm run index:vectors
+```
+
+Indexing sends policy passages to OpenAI and incurs embedding usage. Normal restarts do not require re-ingestion or re-indexing when the corpus and index are unchanged. Start or restart the app after configuring these settings.
+
+### Stop and restart
+
+1. Press **Ctrl+C** in the terminal running `npm run dev` to stop the application.
+2. To stop local Qdrant as well, run `npm run vectors:stop` from the project directory. This preserves indexed data in the Docker volume.
+3. Docker Desktop can then be quit from its menu if it is not needed for other projects.
+
+Stopping the application does not automatically stop Qdrant. Restart with `npm run vectors:start` if needed, then `npm run dev`. Do not use `docker compose down -v` for a normal stop: it removes the database volume.
+
+If the original application terminal is unavailable, identify the listener on macOS/Linux:
+
+```sh
+lsof -nP -iTCP:5173 -sTCP:LISTEN
+```
+
+Confirm the listed PID belongs to this app, then run `kill -TERM <PID>` with that actual PID. Run the `lsof` check again; no listener means the port is free. Avoid stopping unrelated Node processes.
+
+### Check readiness
+
+```sh
+curl -fsS http://127.0.0.1:5173/api/status
+```
+
+The status reports generation configuration, corpus version and semantic readiness. A configured generation key is not proof of valid credentials or available API credits. `semantic.ready=false` means the app can still use keyword retrieval; inspect the reported reason and Qdrant configuration.
+
+### Preview the production build locally
+
+```sh
+npm run build
+npm start
+```
+
+`npm start` runs the built Worker through local Wrangler; use its printed URL, which can differ from port 5173. Stop it with **Ctrl+C** in its terminal. These local start/stop commands do not publish or stop the hosted private site.
+
+The hosted site uses Sites owner-private authentication. The local development server has no standalone production authentication; keep it bound to localhost.
 
 ## Enable LLM generation
 

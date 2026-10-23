@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Northstar | Policy Compass",
+  title: "Northstar Cloud Services | Policy Compass",
   description: "Find clear, source-grounded answers in the Northstar company policy corpus.",
   icons: {
     icon: "/favicon.svg",
