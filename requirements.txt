@@ -241,3 +241,12 @@ EVALUATION REGRESSION FIXES
 - Preserve the six-source limit, document scope, canonical text and citations.
 - Require support for every cited clause, next step and timing qualification.
 - Reject uncited answer paragraphs; semantic citation support still needs review.
+
+ARCHITECTURE REVISION
+- Request strict JSON status/statements/citations; independently validate locally.
+- Render refusal and citation markers server-side; reject unsupported source IDs.
+- Budget 6000 estimated tokens using pinned js-tiktoken cl100k_base proxy.
+- Reserve output plus 512 protocol tokens; never truncate required passages.
+- Include SHA-256 corpus revision, answer timestamp and policy source metadata.
+- Preserve saved evidence snapshots; warn on stale or unversioned saved answers.
+- Keep semantic entailment checking, re-ranking and per-document ACLs proposed.

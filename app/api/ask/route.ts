@@ -13,6 +13,6 @@ export async function POST(req:Request){
  if(!body || typeof body!=='object'||typeof body.question!=='string'||!body.question.trim()||body.question.length>1500)return json({error:'Enter a question between 1 and 1,500 characters.'},400);
  const scope=body.documentId||'all';
  if(scope!=='all'&&!corpus.some(d=>d.id===scope))return json({error:'Unknown policy.'},400);
- const {sources,retrieval}=await retrieveHybrid(index,body.question,scope,getRuntime());
- try{return json({...await generateAnswer(body.question,sources,getRuntime()),retrieval})}catch(e){return json({error:e instanceof Error?e.message:'Unable to generate an answer.',sources},502)}
+ const {sources,retrieval,corpusVersion}=await retrieveHybrid(index,body.question,scope,getRuntime());
+ try{return json({...await generateAnswer(body.question,sources,getRuntime()),retrieval,corpusVersion,generatedAt:new Date().toISOString()})}catch(e){return json({error:e instanceof Error?e.message:'Unable to generate an answer.',sources},502)}
 }

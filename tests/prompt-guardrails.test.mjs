@@ -1,8 +1,9 @@
+import {wireText} from './structured-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {generateAnswer,POLICY_REFUSAL} from '../lib/answer.mjs';
 const sources=[{citation:1,documentId:'leave',title:'Leave',section:'Requests',text:'Ask your manager.'}];
-const response=(text,status='completed')=>Response.json({status,output:[{content:[{type:'output_text',text}]}]});
+const response=(text,status='completed')=>Response.json({status,output:[{content:[{type:'output_text',text:wireText(text)}]}]});
 test('no evidence returns exact refusal without API usage',async()=>{
  const r=await generateAnswer('Tell me about planets',[],{},()=>{throw Error('unexpected API call')});
  assert.equal(r.answer,POLICY_REFUSAL);assert.equal(r.mode,'no_evidence');

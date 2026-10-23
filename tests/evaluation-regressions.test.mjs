@@ -1,3 +1,4 @@
+import {wireText} from './structured-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -8,7 +9,7 @@ import {generateAnswer,POLICY_REFUSAL} from '../lib/answer.mjs';
 const index=createIndex(JSON.parse(fs.readFileSync(new URL('../data/corpus.json',import.meta.url))));
 const cases=JSON.parse(fs.readFileSync(new URL('../evaluation/questions.json',import.meta.url)));
 const source=[{citation:1,text:'Report loss immediately. Do not wipe the device.'}];
-const response=text=>async()=>Response.json({status:'completed',output:[{content:[{type:'output_text',text}]}]});
+const response=text=>async()=>Response.json({status:'completed',output:[{content:[{type:'output_text',text:wireText(text)}]}]});
 test('Q18/Q20 refusal variants normalize without allowing additional text',async()=>{
  for(const text of [POLICY_REFUSAL+'.',' I CAN ONLY ANSWER ABOUT OUR POLICIES! ','i can only\nanswer about our policies?']){
   const r=await generateAnswer('unknown',source,{XAI_API_KEY:'test'},response(text));assert.equal(r.mode,'no_evidence');assert.equal(r.answer,POLICY_REFUSAL);assert.deepEqual(r.sources,[]);

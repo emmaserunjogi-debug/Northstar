@@ -24,13 +24,13 @@ const path=new URL('./'+filename,import.meta.url);
 for(const q of cases){
  const start=performance.now();let retrievalMs,generatedStart,usage,httpStatus,providerStatus,rawAnswer;
  try{
-  const {sources,retrieval}=await retrieveHybrid(index,q.question,q.scope,env);retrievalMs=performance.now()-start;generatedStart=performance.now();
+  const {sources,retrieval,corpusVersion}=await retrieveHybrid(index,q.question,q.scope,env);retrievalMs=performance.now()-start;generatedStart=performance.now();
   const answer=await generateAnswer(q.question,sources,env,async(...args)=>{
    const r=await fetch(...args);httpStatus=r.status;
    if(r.ok){const d=await r.clone().json();usage=d.usage;providerStatus=d.status;rawAnswer=(d.output||[]).flatMap(o=>o.content||[]).filter(c=>c.type==='output_text').map(c=>c.text).join('\n');}
    return r;
   });
-  result.results.push({id:q.id,question:q.question,...answer,retrieval,retrievedSources:sources,retrievalMs,generationMs:performance.now()-generatedStart,totalMs:performance.now()-start,httpStatus,providerStatus,usage,rawAnswer});
+  result.results.push({id:q.id,question:q.question,...answer,retrieval,corpusVersion,generatedAt:new Date().toISOString(),retrievedSources:sources,retrievalMs,generationMs:performance.now()-generatedStart,totalMs:performance.now()-start,httpStatus,providerStatus,usage,rawAnswer});
  }catch(e){result.results.push({id:q.id,question:q.question,error:e.message,retrievalMs,totalMs:performance.now()-start,httpStatus});}
  writeFileSync(path,JSON.stringify(result,null,2)+'\n');
  const last=result.results.at(-1);console.log(`${q.id}: ${last.mode||'error'}, ${Math.round(last.totalMs)} ms`);

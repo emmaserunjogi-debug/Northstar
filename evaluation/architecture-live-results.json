@@ -1,0 +1,608 @@
+{
+  "startedAt": "2026-10-23T04:50:27.360Z",
+  "timezone": "Africa/Kampala",
+  "live": true,
+  "provider": "xai",
+  "model": "grok-4.7",
+  "commit": "d0a82443020e9c405086675e87f466ec32b772a6",
+  "corpusSha256": "458fa4d2b037ec7c95d4756dc110d6cabdaaaa15fed52fd454b52259963f0073",
+  "method": "Sequential local application pipeline; actual retrieval and generation functions, not HTTP/UI latency. No retries or warmup. Offline mode explicitly disables external providers.",
+  "results": [
+    {
+      "id": "Q11",
+      "question": "How long are security logs normally kept, and what if they are under an investigation hold?",
+      "mode": "generated",
+      "answer": "Security logs are normally retained for 90 days from creation, and SEC-05 likewise says they are retained for 90 days unless attached to an incident or hold. [3][1]\n\nIf affected security logs are under a legal, dispute, or investigation hold, deletion is suspended until authorized release, and the scope, custodian, and release decision must be recorded. [4]\n\nSEC-05 states that INC-09 governs incident evidence and DAT-06 governs disposal, but the retrieved passages do not provide INC-09's incident-evidence rules. [1]",
+      "statements": [
+        {
+          "text": "Security logs are normally retained for 90 days from creation, and SEC-05 likewise says they are retained for 90 days unless attached to an incident or hold.",
+          "citations": [
+            3,
+            1
+          ]
+        },
+        {
+          "text": "If affected security logs are under a legal, dispute, or investigation hold, deletion is suspended until authorized release, and the scope, custodian, and release decision must be recorded.",
+          "citations": [
+            4
+          ]
+        },
+        {
+          "text": "SEC-05 states that INC-09 governs incident evidence and DAT-06 governs disposal, but the retrieved passages do not provide INC-09's incident-evidence rules.",
+          "citations": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "SEC-05-3-p4",
+          "documentId": "SEC-05",
+          "title": "Information Security and Access Management",
+          "section": "3. Reviews, departures, and security reporting",
+          "sectionId": "SEC-05-3",
+          "text": "Records and metrics\nRetain access requests and reviews for one year after closure; retain security logs for 90 days unless attached to an incident or hold. Track overdue vulnerabilities, removal timeliness, device compliance, and repeat exceptions monthly. INC-09 governs incident evidence and DAT-06 governs disposal.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "ea2290c93120af80b41a086c61af78c25e615b93665d9c35ef041cc8795880dd",
+          "score": 8.730475874506702,
+          "coverage": 0.3,
+          "chunkId": "SEC-05-3-p4",
+          "citation": 1
+        },
+        {
+          "id": "ETH-02-2-p3",
+          "documentId": "ETH-02",
+          "title": "Code of Conduct and Speak-Up Procedure",
+          "section": "2. Reporting and case handling",
+          "sectionId": "ETH-02-2",
+          "text": "Investigation\nAn uninvolved investigator sets a proportionate scope, interviews relevant people separately, preserves original evidence, and allows the subject a fair opportunity to respond. Interim measures may include reporting-line changes or access restrictions; they are not findings of wrongdoing. People Operations targets completion within 20 business days and provides a progress update at least every ten business days if more time is needed.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "9e3db4c7baf96d5a55533259669409e0f75909041efbc336d27892c1c1d13ca1",
+          "score": 7.5769185507344545,
+          "coverage": 0.6,
+          "chunkId": "ETH-02-2-p3",
+          "citation": 2
+        },
+        {
+          "id": "DAT-06-3-p1",
+          "documentId": "DAT-06",
+          "title": "Privacy, Information Handling, and Records",
+          "section": "3. Retention schedule, holds, and disposal",
+          "sectionId": "DAT-06-3",
+          "text": "Default internal schedule\nPolicy versions, approvals, and exceptions: three years after supersession or closure. Conduct cases and safety reports: three years after closure. Employment records: three years after departure. Financial transactions, expenses, and supplier contracts: seven years after transaction or contract end, whichever applies. Customer account records: two years after account closure. Support tickets: two years after closure. Incident records: three years after closure. Continuity plans and exercise records: three years after supersession or exercise. Access requests and reviews: one year after closure. Security logs: 90 days from creation. Unsuccessful applicant records: six months after the hiring decision.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "19f6fe753f3765e50544da431d2bfaf57dadb8958c7c84d1a3beeb46a51a9dff",
+          "score": 3.8284436052739093,
+          "coverage": 0.4,
+          "chunkId": "DAT-06-3-p1",
+          "citation": 3
+        },
+        {
+          "id": "DAT-06-3-p3",
+          "documentId": "DAT-06",
+          "title": "Privacy, Information Handling, and Records",
+          "section": "3. Retention schedule, holds, and disposal",
+          "sectionId": "DAT-06-3",
+          "text": "Overrides and holds\nThese are illustrative company defaults, not statements of legal minimums. The Privacy Lead records approved jurisdictional or contractual overrides. A legal, dispute, or investigation hold suspends deletion of affected material until authorized release; record scope, custodian, and release decision.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "19f6fe753f3765e50544da431d2bfaf57dadb8958c7c84d1a3beeb46a51a9dff",
+          "score": 7.318876260330014,
+          "coverage": 0.4,
+          "chunkId": "DAT-06-3-p3",
+          "citation": 4
+        },
+        {
+          "id": "SEC-05-3-p3",
+          "documentId": "SEC-05",
+          "title": "Information Security and Access Management",
+          "section": "3. Reviews, departures, and security reporting",
+          "sectionId": "SEC-05-3",
+          "text": "Report and contain\nReport a lost device, suspicious login, malware alert, data exposure, or accidental external sharing immediately through the emergency Service Desk channel and notify the IT on-call contact. If that channel is unavailable, call the published internal on-call number. Disconnect a suspected compromised device from networks if safe, but do not wipe it, investigate independently, or delete evidence.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "ea2290c93120af80b41a086c61af78c25e615b93665d9c35ef041cc8795880dd",
+          "evidenceRole": "context",
+          "chunkId": "SEC-05-3-p3",
+          "citation": 5
+        },
+        {
+          "id": "ETH-02-2-p2",
+          "documentId": "ETH-02",
+          "title": "Code of Conduct and Speak-Up Procedure",
+          "section": "2. Reporting and case handling",
+          "sectionId": "ETH-02-2",
+          "text": "Intake procedure\nThe recipient forwards the concern to the restricted People Operations queue the same business day. The case owner acknowledges a reachable reporter within two business days, assesses immediate protection needs, and records the allegation, dates, available evidence, and any conflict of interest. Records must not go into a broadly visible Service Desk queue.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "9e3db4c7baf96d5a55533259669409e0f75909041efbc336d27892c1c1d13ca1",
+          "evidenceRole": "context",
+          "chunkId": "ETH-02-2-p2",
+          "citation": 6
+        }
+      ],
+      "provider": "xai",
+      "model": "grok-4.7",
+      "budget": {
+        "tokenizer": "cl100k_base estimate; not model-exact",
+        "totalBudget": 6000,
+        "inputEstimate": 1153,
+        "outputReserve": 1024,
+        "protocolReserve": 512,
+        "droppedContext": 0
+      },
+      "retrieval": {
+        "mode": "keyword",
+        "reason": "not_configured"
+      },
+      "corpusVersion": "corpus-v1-b0ab76e8c462a98a081ff46903d56cecdc46a93d340c3554a20c27fb277051d1",
+      "generatedAt": "2026-10-23T04:50:33.097Z",
+      "retrievedSources": [
+        {
+          "id": "SEC-05-3-p4",
+          "documentId": "SEC-05",
+          "title": "Information Security and Access Management",
+          "section": "3. Reviews, departures, and security reporting",
+          "sectionId": "SEC-05-3",
+          "text": "Records and metrics\nRetain access requests and reviews for one year after closure; retain security logs for 90 days unless attached to an incident or hold. Track overdue vulnerabilities, removal timeliness, device compliance, and repeat exceptions monthly. INC-09 governs incident evidence and DAT-06 governs disposal.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "ea2290c93120af80b41a086c61af78c25e615b93665d9c35ef041cc8795880dd",
+          "score": 8.730475874506702,
+          "coverage": 0.3,
+          "chunkId": "SEC-05-3-p4",
+          "citation": 1
+        },
+        {
+          "id": "ETH-02-2-p3",
+          "documentId": "ETH-02",
+          "title": "Code of Conduct and Speak-Up Procedure",
+          "section": "2. Reporting and case handling",
+          "sectionId": "ETH-02-2",
+          "text": "Investigation\nAn uninvolved investigator sets a proportionate scope, interviews relevant people separately, preserves original evidence, and allows the subject a fair opportunity to respond. Interim measures may include reporting-line changes or access restrictions; they are not findings of wrongdoing. People Operations targets completion within 20 business days and provides a progress update at least every ten business days if more time is needed.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "9e3db4c7baf96d5a55533259669409e0f75909041efbc336d27892c1c1d13ca1",
+          "score": 7.5769185507344545,
+          "coverage": 0.6,
+          "chunkId": "ETH-02-2-p3",
+          "citation": 2
+        },
+        {
+          "id": "DAT-06-3-p1",
+          "documentId": "DAT-06",
+          "title": "Privacy, Information Handling, and Records",
+          "section": "3. Retention schedule, holds, and disposal",
+          "sectionId": "DAT-06-3",
+          "text": "Default internal schedule\nPolicy versions, approvals, and exceptions: three years after supersession or closure. Conduct cases and safety reports: three years after closure. Employment records: three years after departure. Financial transactions, expenses, and supplier contracts: seven years after transaction or contract end, whichever applies. Customer account records: two years after account closure. Support tickets: two years after closure. Incident records: three years after closure. Continuity plans and exercise records: three years after supersession or exercise. Access requests and reviews: one year after closure. Security logs: 90 days from creation. Unsuccessful applicant records: six months after the hiring decision.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "19f6fe753f3765e50544da431d2bfaf57dadb8958c7c84d1a3beeb46a51a9dff",
+          "score": 3.8284436052739093,
+          "coverage": 0.4,
+          "chunkId": "DAT-06-3-p1",
+          "citation": 3
+        },
+        {
+          "id": "DAT-06-3-p3",
+          "documentId": "DAT-06",
+          "title": "Privacy, Information Handling, and Records",
+          "section": "3. Retention schedule, holds, and disposal",
+          "sectionId": "DAT-06-3",
+          "text": "Overrides and holds\nThese are illustrative company defaults, not statements of legal minimums. The Privacy Lead records approved jurisdictional or contractual overrides. A legal, dispute, or investigation hold suspends deletion of affected material until authorized release; record scope, custodian, and release decision.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "19f6fe753f3765e50544da431d2bfaf57dadb8958c7c84d1a3beeb46a51a9dff",
+          "score": 7.318876260330014,
+          "coverage": 0.4,
+          "chunkId": "DAT-06-3-p3",
+          "citation": 4
+        },
+        {
+          "id": "SEC-05-3-p3",
+          "documentId": "SEC-05",
+          "title": "Information Security and Access Management",
+          "section": "3. Reviews, departures, and security reporting",
+          "sectionId": "SEC-05-3",
+          "text": "Report and contain\nReport a lost device, suspicious login, malware alert, data exposure, or accidental external sharing immediately through the emergency Service Desk channel and notify the IT on-call contact. If that channel is unavailable, call the published internal on-call number. Disconnect a suspected compromised device from networks if safe, but do not wipe it, investigate independently, or delete evidence.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "ea2290c93120af80b41a086c61af78c25e615b93665d9c35ef041cc8795880dd",
+          "evidenceRole": "context",
+          "chunkId": "SEC-05-3-p3",
+          "citation": 5
+        },
+        {
+          "id": "ETH-02-2-p2",
+          "documentId": "ETH-02",
+          "title": "Code of Conduct and Speak-Up Procedure",
+          "section": "2. Reporting and case handling",
+          "sectionId": "ETH-02-2",
+          "text": "Intake procedure\nThe recipient forwards the concern to the restricted People Operations queue the same business day. The case owner acknowledges a reachable reporter within two business days, assesses immediate protection needs, and records the allegation, dates, available evidence, and any conflict of interest. Records must not go into a broadly visible Service Desk queue.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "9e3db4c7baf96d5a55533259669409e0f75909041efbc336d27892c1c1d13ca1",
+          "evidenceRole": "context",
+          "chunkId": "ETH-02-2-p2",
+          "citation": 6
+        }
+      ],
+      "retrievalMs": 22.672582999999975,
+      "generationMs": 5697.874417,
+      "totalMs": 5720.548958,
+      "httpStatus": 200,
+      "providerStatus": "completed",
+      "usage": {
+        "input_tokens": 2498,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens": 466,
+        "output_tokens_details": {
+          "reasoning_tokens": 322
+        },
+        "total_tokens": 2964,
+        "num_sources_used": 0,
+        "num_server_side_tools_used": 0,
+        "cost_in_usd_ticks": 60640000,
+        "context_details": {
+          "input_tokens": 2498,
+          "output_tokens": 475
+        }
+      },
+      "rawAnswer": "{\"status\":\"answer\",\"statements\":[{\"text\":\"Security logs are normally retained for 90 days from creation, and SEC-05 likewise says they are retained for 90 days unless attached to an incident or hold.\",\"citations\":[3,1]},{\"text\":\"If affected security logs are under a legal, dispute, or investigation hold, deletion is suspended until authorized release, and the scope, custodian, and release decision must be recorded.\",\"citations\":[4]},{\"text\":\"SEC-05 states that INC-09 governs incident evidence and DAT-06 governs disposal, but the retrieved passages do not provide INC-09's incident-evidence rules.\",\"citations\":[1]}]}"
+    },
+    {
+      "id": "Q17",
+      "question": "Before disposing of an old laptop, what should happen to sensitive data, and may an unauthorized employee speak publicly for the company about it?",
+      "mode": "generated",
+      "answer": "Sensitive information stored on a device such as an old laptop must be securely wiped before disposal or reassignment, and physical records and media should be destroyed according to retention and confidentiality requirements. [1]\n\nNo. Only authorized persons may speak on behalf of the company in official external communications, and employees who are not designated spokespeople should avoid public statements that could be interpreted as official company positions and should redirect such questions to the appropriate communications lead. [6][2]",
+      "statements": [
+        {
+          "text": "Sensitive information stored on a device such as an old laptop must be securely wiped before disposal or reassignment, and physical records and media should be destroyed according to retention and confidentiality requirements.",
+          "citations": [
+            1
+          ]
+        },
+        {
+          "text": "No. Only authorized persons may speak on behalf of the company in official external communications, and employees who are not designated spokespeople should avoid public statements that could be interpreted as official company positions and should redirect such questions to the appropriate communications lead.",
+          "citations": [
+            6,
+            2
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "DOC-12-8-p2",
+          "documentId": "DOC-12",
+          "title": "Asset Management and Facility Operations",
+          "section": "8. Disposal and Surplus Management",
+          "sectionId": "DOC-12-8",
+          "text": "Sensitive information stored on devices or equipment must be securely wiped before disposal or reassignment. Physical records and media should be destroyed according to retention and confidentiality requirements.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "050ac42a3f322bd16feeeaac4f229ac35d82b73eaefc5f76cf26052155a26934",
+          "score": 11.093373189435003,
+          "coverage": 0.2857142857142857,
+          "chunkId": "DOC-12-8-p2",
+          "citation": 1
+        },
+        {
+          "id": "DOC-13-2-p2",
+          "documentId": "DOC-13",
+          "title": "External Communications and Brand Standards",
+          "section": "2. Communication Authority",
+          "sectionId": "DOC-13-2",
+          "text": "Employees who are not designated spokespeople should avoid making public statements that could be interpreted as official company positions. If asked to comment publicly, employees should redirect the question to the appropriate communications lead.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "aeed5d92a59d58a88b32958b3e87172f4c59fce2413133691d80bcc41b33277f",
+          "score": 7.928315342700173,
+          "coverage": 0.4,
+          "chunkId": "DOC-13-2-p2",
+          "citation": 2
+        },
+        {
+          "id": "DOC-11-7-p2",
+          "documentId": "DOC-11",
+          "title": "Acceptable Use and Digital Communications",
+          "section": "7. Remote Work and Device Security",
+          "sectionId": "DOC-11-7",
+          "text": "Staff must be vigilant against phishing and social engineering attempts. Unexpected requests for login information, payment actions, or sensitive data should be verified through an independent channel before action is taken.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "ab15f7dec198df85daf68e49443daef7a0be695f78c3b807fc3bdceb43b0e412",
+          "score": 10.149097687107309,
+          "coverage": 0.4444444444444444,
+          "chunkId": "DOC-11-7-p2",
+          "citation": 3
+        },
+        {
+          "id": "DOC-13-9-p1",
+          "documentId": "DOC-13",
+          "title": "External Communications and Brand Standards",
+          "section": "9. Reporting and Escalation",
+          "sectionId": "DOC-13-9",
+          "text": "Employees who are uncertain about the appropriate communication channel or who become aware of a misleading or unauthorized statement should escalate the matter to the communications lead, Legal, or a manager. Concern about public reputational risk, customer harm, or legal exposure should be reported immediately.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "aeed5d92a59d58a88b32958b3e87172f4c59fce2413133691d80bcc41b33277f",
+          "score": 5.386453220544238,
+          "coverage": 0.4,
+          "chunkId": "DOC-13-9-p1",
+          "citation": 4
+        },
+        {
+          "id": "DOC-12-8-p1",
+          "documentId": "DOC-12",
+          "title": "Asset Management and Facility Operations",
+          "section": "8. Disposal and Surplus Management",
+          "sectionId": "DOC-12-8",
+          "text": "When an asset reaches the end of useful life, is obsolete, is damaged beyond repair, or is no longer needed, it must be disposed of or redeployed through approved procedures. Disposal may require environmental, finance, or legal review depending on the asset type and value.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "050ac42a3f322bd16feeeaac4f229ac35d82b73eaefc5f76cf26052155a26934",
+          "evidenceRole": "context",
+          "chunkId": "DOC-12-8-p1",
+          "citation": 5
+        },
+        {
+          "id": "DOC-13-2-p1",
+          "documentId": "DOC-13",
+          "title": "External Communications and Brand Standards",
+          "section": "2. Communication Authority",
+          "sectionId": "DOC-13-2",
+          "text": "Only authorized persons may speak on behalf of the company in official external communications. Managers, designated spokespersons, and communications representatives must coordinate with Legal and Marketing or Communications where needed. This requirement is especially important in customer incidents, legal inquiries, media requests, regulatory interactions, and product or service commitments.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "aeed5d92a59d58a88b32958b3e87172f4c59fce2413133691d80bcc41b33277f",
+          "evidenceRole": "context",
+          "chunkId": "DOC-13-2-p1",
+          "citation": 6
+        }
+      ],
+      "provider": "xai",
+      "model": "grok-4.7",
+      "budget": {
+        "tokenizer": "cl100k_base estimate; not model-exact",
+        "totalBudget": 6000,
+        "inputEstimate": 920,
+        "outputReserve": 1024,
+        "protocolReserve": 512,
+        "droppedContext": 0
+      },
+      "retrieval": {
+        "mode": "keyword",
+        "reason": "not_configured"
+      },
+      "corpusVersion": "corpus-v1-b0ab76e8c462a98a081ff46903d56cecdc46a93d340c3554a20c27fb277051d1",
+      "generatedAt": "2026-10-23T04:50:37.010Z",
+      "retrievedSources": [
+        {
+          "id": "DOC-12-8-p2",
+          "documentId": "DOC-12",
+          "title": "Asset Management and Facility Operations",
+          "section": "8. Disposal and Surplus Management",
+          "sectionId": "DOC-12-8",
+          "text": "Sensitive information stored on devices or equipment must be securely wiped before disposal or reassignment. Physical records and media should be destroyed according to retention and confidentiality requirements.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "050ac42a3f322bd16feeeaac4f229ac35d82b73eaefc5f76cf26052155a26934",
+          "score": 11.093373189435003,
+          "coverage": 0.2857142857142857,
+          "chunkId": "DOC-12-8-p2",
+          "citation": 1
+        },
+        {
+          "id": "DOC-13-2-p2",
+          "documentId": "DOC-13",
+          "title": "External Communications and Brand Standards",
+          "section": "2. Communication Authority",
+          "sectionId": "DOC-13-2",
+          "text": "Employees who are not designated spokespeople should avoid making public statements that could be interpreted as official company positions. If asked to comment publicly, employees should redirect the question to the appropriate communications lead.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "aeed5d92a59d58a88b32958b3e87172f4c59fce2413133691d80bcc41b33277f",
+          "score": 7.928315342700173,
+          "coverage": 0.4,
+          "chunkId": "DOC-13-2-p2",
+          "citation": 2
+        },
+        {
+          "id": "DOC-11-7-p2",
+          "documentId": "DOC-11",
+          "title": "Acceptable Use and Digital Communications",
+          "section": "7. Remote Work and Device Security",
+          "sectionId": "DOC-11-7",
+          "text": "Staff must be vigilant against phishing and social engineering attempts. Unexpected requests for login information, payment actions, or sensitive data should be verified through an independent channel before action is taken.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "ab15f7dec198df85daf68e49443daef7a0be695f78c3b807fc3bdceb43b0e412",
+          "score": 10.149097687107309,
+          "coverage": 0.4444444444444444,
+          "chunkId": "DOC-11-7-p2",
+          "citation": 3
+        },
+        {
+          "id": "DOC-13-9-p1",
+          "documentId": "DOC-13",
+          "title": "External Communications and Brand Standards",
+          "section": "9. Reporting and Escalation",
+          "sectionId": "DOC-13-9",
+          "text": "Employees who are uncertain about the appropriate communication channel or who become aware of a misleading or unauthorized statement should escalate the matter to the communications lead, Legal, or a manager. Concern about public reputational risk, customer harm, or legal exposure should be reported immediately.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "aeed5d92a59d58a88b32958b3e87172f4c59fce2413133691d80bcc41b33277f",
+          "score": 5.386453220544238,
+          "coverage": 0.4,
+          "chunkId": "DOC-13-9-p1",
+          "citation": 4
+        },
+        {
+          "id": "DOC-12-8-p1",
+          "documentId": "DOC-12",
+          "title": "Asset Management and Facility Operations",
+          "section": "8. Disposal and Surplus Management",
+          "sectionId": "DOC-12-8",
+          "text": "When an asset reaches the end of useful life, is obsolete, is damaged beyond repair, or is no longer needed, it must be disposed of or redeployed through approved procedures. Disposal may require environmental, finance, or legal review depending on the asset type and value.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "050ac42a3f322bd16feeeaac4f229ac35d82b73eaefc5f76cf26052155a26934",
+          "evidenceRole": "context",
+          "chunkId": "DOC-12-8-p1",
+          "citation": 5
+        },
+        {
+          "id": "DOC-13-2-p1",
+          "documentId": "DOC-13",
+          "title": "External Communications and Brand Standards",
+          "section": "2. Communication Authority",
+          "sectionId": "DOC-13-2",
+          "text": "Only authorized persons may speak on behalf of the company in official external communications. Managers, designated spokespersons, and communications representatives must coordinate with Legal and Marketing or Communications where needed. This requirement is especially important in customer incidents, legal inquiries, media requests, regulatory interactions, and product or service commitments.",
+          "documentVersion": "Not specified",
+          "effective": "Not specified",
+          "documentHash": "aeed5d92a59d58a88b32958b3e87172f4c59fce2413133691d80bcc41b33277f",
+          "evidenceRole": "context",
+          "chunkId": "DOC-13-2-p1",
+          "citation": 6
+        }
+      ],
+      "retrievalMs": 31.20808399999987,
+      "generationMs": 3880.0285830000003,
+      "totalMs": 3911.2389589999993,
+      "httpStatus": 200,
+      "providerStatus": "completed",
+      "usage": {
+        "input_tokens": 2260,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens": 289,
+        "output_tokens_details": {
+          "reasoning_tokens": 174
+        },
+        "total_tokens": 2549,
+        "num_sources_used": 0,
+        "num_server_side_tools_used": 0,
+        "cost_in_usd_ticks": 45260000,
+        "context_details": {
+          "input_tokens": 2260,
+          "output_tokens": 298
+        }
+      },
+      "rawAnswer": "{\"status\":\"answer\",\"statements\":[{\"text\":\"Sensitive information stored on a device such as an old laptop must be securely wiped before disposal or reassignment, and physical records and media should be destroyed according to retention and confidentiality requirements.\",\"citations\":[1]},{\"text\":\"No. Only authorized persons may speak on behalf of the company in official external communications, and employees who are not designated spokespeople should avoid public statements that could be interpreted as official company positions and should redirect such questions to the appropriate communications lead.\",\"citations\":[6,2]}]}"
+    },
+    {
+      "id": "Q20",
+      "question": "What exact monthly childcare reimbursement amount does our company pay?",
+      "mode": "no_evidence",
+      "answer": "i can only answer about our policies",
+      "sources": [],
+      "budget": {
+        "tokenizer": "cl100k_base estimate; not model-exact",
+        "totalBudget": 6000,
+        "inputEstimate": 818,
+        "outputReserve": 1024,
+        "protocolReserve": 512,
+        "droppedContext": 0
+      },
+      "retrieval": {
+        "mode": "keyword",
+        "reason": "not_configured"
+      },
+      "corpusVersion": "corpus-v1-b0ab76e8c462a98a081ff46903d56cecdc46a93d340c3554a20c27fb277051d1",
+      "generatedAt": "2026-10-23T04:50:38.755Z",
+      "retrievedSources": [
+        {
+          "id": "FIN-07-3-p1",
+          "documentId": "FIN-07",
+          "title": "Procurement, Expenses, and Payment Controls",
+          "section": "3. Expenses, exceptions, and reconciliation",
+          "sectionId": "FIN-07-3",
+          "text": "Reimbursable expenses\nReasonable, necessary business costs are reimbursable when approved and supported. Personal purchases, fines, entertainment unrelated to business, and duplicate claims are not reimbursable. Travel follows WRK-04. Obtain approval against the estimated total before incurring costs; the same FIN-07 thresholds apply to reimbursements.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "5e70dcb45eeb8d3c858b25e91a8dd8769396a2cd09ffd2516df0a679f3b92523",
+          "score": 7.8287561752427886,
+          "coverage": 0.2857142857142857,
+          "chunkId": "FIN-07-3-p1",
+          "citation": 1
+        },
+        {
+          "id": "FIN-07-2-p3",
+          "documentId": "FIN-07",
+          "title": "Procurement, Expenses, and Payment Controls",
+          "section": "2. Supplier diligence and invoice payment",
+          "sectionId": "FIN-07-2",
+          "text": "Payment verification\nFinance matches the approved purchase, receipt confirmation, and invoice, then checks amounts, duplicate invoice numbers, and payment terms. A separate authorized person releases the payment. A worker who changes bank details cannot be the sole verifier or payment releaser.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "5e70dcb45eeb8d3c858b25e91a8dd8769396a2cd09ffd2516df0a679f3b92523",
+          "score": 7.4193975198270525,
+          "coverage": 0.2857142857142857,
+          "chunkId": "FIN-07-2-p3",
+          "citation": 2
+        },
+        {
+          "id": "FIN-07-3-p4",
+          "documentId": "FIN-07",
+          "title": "Procurement, Expenses, and Payment Controls",
+          "section": "3. Expenses, exceptions, and reconciliation",
+          "sectionId": "FIN-07-3",
+          "text": "Month-end controls\nFinance reconciles bank and card activity monthly, investigates unmatched items, and has an independent reviewer sign off. Track overdue claims, missing approvals, duplicate payments, and supplier concentration. Retain approvals, verification evidence, invoices, claims, and reconciliation records under DAT-06's seven-year financial schedule.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "5e70dcb45eeb8d3c858b25e91a8dd8769396a2cd09ffd2516df0a679f3b92523",
+          "score": 6.100284486199698,
+          "coverage": 0.2857142857142857,
+          "chunkId": "FIN-07-3-p4",
+          "citation": 3
+        },
+        {
+          "id": "PPL-03-3-p2",
+          "documentId": "PPL-03",
+          "title": "Employee Lifecycle and Leave Procedures",
+          "section": "3. Performance, departure, and records",
+          "sectionId": "PPL-03-3",
+          "text": "Planned departure\nPeople Operations records the final working date and exact access cutoff time, then opens a restricted departure ticket. The manager assigns handover owners, identifies customer commitments, and confirms company property. IT schedules account suspension for the approved cutoff; email forwarding or data transfer requires an identified business purpose and privacy review. Finance handles outstanding expenses and final payments according to applicable requirements.",
+          "documentVersion": "1.0",
+          "effective": "13 October 2026",
+          "documentHash": "512f905cd480a2af580b267c2ca225d2a3a0b84fa31bd3dba4b9436de5e51885",
+          "score": 5.889554118597486,
+          "coverage": 0.2857142857142857,
+          "chunkId": "PPL-03-3-p2",
+          "citation": 4
+        }
+      ],
+      "retrievalMs": 10.968082999999751,
+      "generationMs": 1732.5655000000006,
+      "totalMs": 1743.535833,
+      "httpStatus": 200,
+      "providerStatus": "completed",
+      "usage": {
+        "input_tokens": 2140,
+        "input_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "output_tokens": 60,
+        "output_tokens_details": {
+          "reasoning_tokens": 51
+        },
+        "total_tokens": 2200,
+        "num_sources_used": 0,
+        "num_server_side_tools_used": 0,
+        "cost_in_usd_ticks": 29120000,
+        "context_details": {
+          "input_tokens": 2140,
+          "output_tokens": 69
+        }
+      },
+      "rawAnswer": "{\"status\":\"refusal\",\"statements\":[]}"
+    }
+  ],
+  "completedAt": "2026-10-23T04:50:38.756Z"
+}

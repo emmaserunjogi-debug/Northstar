@@ -1,3 +1,4 @@
+import {wireText} from './structured-fixture.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {generateAnswer} from '../lib/answer.mjs';
@@ -11,12 +12,12 @@ test('Grok receives bounded policy evidence with system instructions and own key
  const r=await generateAnswer('leave',sources,{XAI_API_KEY:'xai-test'},async(url,options)=>{
   assert.equal(url,'https://api.x.ai/v1/responses');assert.equal(options.headers.Authorization,'Bearer xai-test');
   const b=JSON.parse(options.body);assert.equal(b.model,'grok-4.7');assert.equal(b.store,false);assert.equal(b.input[0].role,'system');assert.equal(JSON.parse(b.input[1].content).evidence.length,1);assert.equal(b.tools,undefined);
-  return Response.json({status:'completed',output:[{content:[{type:'output_text',text:'Submit leave ten business days ahead when possible. [1]'}]}]});
+  return Response.json({status:'completed',output:[{content:[{type:'output_text',text:wireText('Submit leave ten business days ahead when possible. [1]')}]}]});
  });assert.equal(r.mode,'generated');assert.equal(r.provider,'xai');
 });
 test('Grok retains invalid citation and incomplete answer safeguards',async()=>{
  for(const data of [{status:'completed',text:'Invented [99]'},{status:'incomplete',text:'Truncated [1]'}]){
-  const r=await generateAnswer('leave',sources,{XAI_API_KEY:'test'},async()=>Response.json({status:data.status,output:[{content:[{type:'output_text',text:data.text}]}]}));assert.equal(r.mode,'retrieval');
+  const r=await generateAnswer('leave',sources,{XAI_API_KEY:'test'},async()=>Response.json({status:data.status,output:[{content:[{type:'output_text',text:wireText(data.text)}]}]}));assert.equal(r.mode,'retrieval');
  }
 });
 test('provider selection is explicit; unknown providers fail closed',()=>{assert.equal(generationConfig({LLM_PROVIDER:'openai',OPENAI_API_KEY:'o',XAI_API_KEY:'x'}).key,'o');assert.throws(()=>generationConfig({LLM_PROVIDER:'unknown'}),/Unsupported/)});
