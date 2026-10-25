@@ -46,3 +46,9 @@ yarn-error.log*
 
 # Safe configuration template only
 !.dev.vars.example
+
+# Python test environments and generated caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/

@@ -9,7 +9,7 @@ A private company-policy RAG application built with React, Vinext, and a Cloudfl
 - Node.js 22.13 or later and npm (see `package.json`).
 - Docker Desktop, or Docker Engine with Compose, only for local Qdrant semantic retrieval.
 - A funded xAI API key for Grok answers. OpenAI credentials are separately required for embeddings. Neither provider runs as a local service.
-- Python 3 only for the optional evaluation report scripts; it is not required to serve the app. No `pip install -r requirements.txt` is needed: that file documents requirements.
+- Python 3 only for the optional evaluation report scripts; it is not required to serve the app. Python test dependencies are listed in `requirements.txt`; the application specification is in `application-requirements.txt`.
 
 ```sh
 
@@ -248,3 +248,20 @@ Evaluation fixes: refusal matching accepts case/whitespace variants and one fina
 Generation now uses a strict JSON response schema (`status`, `statements`, `citations`) with independent local validation and server-rendered citation markers. The display limit stays at 150 words. A 6,000-token **estimate** based on `cl100k_base` includes instructions/schema/evidence and reserves output plus 512 protocol tokens; this is not the model's exact tokenizer. Required passages must fit intact, otherwise the app returns source-only guidance. Optional context may be omitted.
 
 Answers carry a SHA-256 corpus revision and timestamp. Saved answers retain their evidence; citation clicks open that snapshot, and older/unversioned answers are labeled. The current policy is available separately. These records are browser-local, not an immutable audit system. See [design and evaluation](design-and-evaluation.md#12-implemented-architectural-improvements) for request sequence, trust boundaries, lifecycle and requirement traceability. Historical evaluation percentages remain baseline measurements.
+
+## Python evaluation tests and CI
+
+GitHub Actions runs `.github/workflows/pytest.yml` on pushes, pull requests,
+and manual dispatch. It uses Python 3.12, installs `requirements.txt`, and runs:
+
+```sh
+python -m pip install -r requirements.txt
+python -m pytest tests/python -v
+```
+
+The tests regenerate offline and live evaluation reports from frozen local
+results in temporary directories and compare the recorded metrics. They do not
+call model APIs or require secrets, Docker, or Qdrant. These are report regression
+tests, not a fresh live evaluation. A separate job in the same workflow uses Node.js 22, installs JavaScript
+dependencies with `npm ci`, and runs `npm test`. Both jobs must pass. The optional
+Qdrant integration test remains skipped unless its required service is configured.
