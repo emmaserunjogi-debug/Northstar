@@ -12,7 +12,7 @@ A private company-policy RAG application built with React, Vinext, and a Cloudfl
 - Python 3 only for the optional evaluation report scripts; it is not required to serve the app. No `pip install -r requirements.txt` is needed: that file documents requirements.
 
 ```sh
-cd /Users/emmanuelserunjogi/ProjAI/policy-assistant
+
 npm ci
 # Create the local settings file only if it does not already exist.
 if [ ! -f .dev.vars ]; then cp .dev.vars.example .dev.vars; fi
@@ -24,7 +24,7 @@ Edit `.dev.vars` with your actual settings. Preserve existing keys; do not commi
 ### Start the application
 
 ```sh
-cd /Users/emmanuelserunjogi/ProjAI/policy-assistant
+
 npm run dev
 ```
 
