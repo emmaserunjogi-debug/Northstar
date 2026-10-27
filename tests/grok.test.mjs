@@ -24,3 +24,15 @@ test('provider selection is explicit; unknown providers fail closed',()=>{assert
 test('Grok errors explain auth or quota without exposing response content',async()=>{
  for(const status of [401,429])await assert.rejects(()=>generateAnswer('leave',sources,{XAI_API_KEY:'test'},async()=>new Response('secret',{status})),e=>e.message.includes('Grok')&&!e.message.includes('secret'));
 });
+
+test('edge-compatible redirect handling rejects redirects without following them',async()=>{
+ for(const provider of ['xai','openai']){
+  let calls=0;
+  await assert.rejects(()=>generateAnswer('leave',sources,{LLM_PROVIDER:provider,XAI_API_KEY:'test',OPENAI_API_KEY:'test'},async(url,options)=>{
+   calls++;
+   assert.equal(options.redirect,'manual');
+   return new Response('untrusted redirect body',{status:302,headers:{Location:'https://untrusted.example'}});
+  }),/could not complete this answer/);
+  assert.equal(calls,1);
+ }
+});
